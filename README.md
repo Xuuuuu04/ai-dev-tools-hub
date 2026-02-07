@@ -9,6 +9,46 @@
 
 ---
 
+## 0) 筛选索引（CLI / IDE / Platform + 开源/闭源 + 国产）
+
+### 快速筛选
+- 形态：`CLI` / `IDE` / `Platform`
+- 许可：`开源` / `闭源或混合`
+- 生态：`国产` / `国际`
+
+### 统一筛选总表
+
+| Tool | 形态 | 开源/闭源 | 是否国产 | 入口 |
+|---|---|---|---|---|
+| Claude Code | CLI | 开源 | 国际 | [repo](https://github.com/anthropics/claude-code) |
+| Codex CLI | CLI | 开源 | 国际 | [repo](https://github.com/openai/codex) |
+| Gemini CLI | CLI | 开源 | 国际 | [repo](https://github.com/google-gemini/gemini-cli) |
+| Qwen Code | CLI | 开源 | 国产 | [repo](https://github.com/QwenLM/qwen-code) |
+| Kimi Code CLI | CLI | 开源 | 国产 | [repo](https://github.com/MoonshotAI/kimi-cli) |
+| GitHub Copilot CLI | CLI | 开源 | 国际 | [repo](https://github.com/github/copilot-cli) |
+| Continue CLI | CLI | 开源 | 国际 | [repo](https://github.com/continuedev/continue) |
+| Aider | CLI | 开源 | 国际 | [repo](https://github.com/Aider-AI/aider) |
+| Goose | CLI/Platform | 开源 | 国际 | [repo](https://github.com/block/goose) |
+| OpenCode | CLI/Platform | 开源 | 国际 | [repo](https://github.com/anomalyco/opencode) |
+| OpenHands CLI | CLI | 开源 | 国际 | [repo](https://github.com/OpenHands/OpenHands-CLI) |
+| Cursor CLI / Agent | CLI/IDE | 闭源或混合 | 国际 | [docs](https://docs.cursor.com/en/agent/cli) |
+| CodeBuddy CLI | CLI | 待核验 | 国产 | [ref](https://cloud.tencent.com/developer/article/2556464) |
+| Cline | IDE | 开源 | 国际 | [repo](https://github.com/cline/cline) |
+| Roo Code | IDE | 开源 | 国际 | [repo](https://github.com/RooCodeInc/Roo-Code) |
+| Continue Extension | IDE | 开源 | 国际 | [repo](https://github.com/continuedev/continue) |
+| gh-copilot | IDE/CLI 扩展 | 开源 | 国际 | [repo](https://github.com/github/gh-copilot) |
+| Ollama | Platform | 开源 | 国际 | [repo](https://github.com/ollama/ollama) |
+| LiteLLM | Platform | 开源 | 国际 | [repo](https://github.com/BerriAI/litellm) |
+| OpenHands | Platform | 开源+企业版混合 | 国际 | [repo](https://github.com/OpenHands/OpenHands) |
+| Cherry Studio | IDE/Desktop | 开源 | 国产 | [repo](https://github.com/CherryHQ/cherry-studio) |
+| FastGPT | Platform | 开源 | 国产 | [repo](https://github.com/labring/FastGPT) |
+| RAGFlow | Platform | 开源 | 国产团队主导 | [repo](https://github.com/infiniflow/ragflow) |
+| Dify | Platform | 开源 | 国产团队主导 | [repo](https://github.com/langgenius/dify) |
+| ModelScope SDK | Platform/SDK | 开源 | 国产 | [repo](https://github.com/modelscope/modelscope) |
+| MCP Reference Servers | Platform/Protocol | 开源 | 国际 | [repo](https://github.com/modelcontextprotocol/servers) |
+
+---
+
 ## 1) AI Coding CLI（终端主力）
 
 | Tool | Official Repo | Docs / Site | Install (Quick) | 类型 | GitHub Stars* |
