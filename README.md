@@ -1,386 +1,174 @@
-<div align="center">
+# AI Dev Navigator
 
-# 🤖 AI Dev Navigator
+一个面向初学者与进阶开发者的 AI 开发工具信息集成仓库。
 
-**一个面向初学者与进阶开发者的 AI 开发工具信息集成仓库**
-
-> 把分散在 GitHub/官网/文档中的信息，整理成**一页可检索导航**
-
-![Status](https://img.shields.io/badge/status-active-success)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--02--07-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-
-[快速开始](#-快速开始) • [工具索引](#-工具索引) • [模型情报](#-前沿模型厂商情报) • [学习路径](#-初学者学习路径)
-
-</div>
+> 最新核验时间：`2026-02-07`
 
 ---
 
-## 📋 目录
+## 1. 前沿模型厂商情报
 
-<details>
-<summary>点击展开完整目录</summary>
+> **价格单位**：人民币（¥）/ 百万 tokens | **汇率参考**：$1 ≈ ¥7.2（2026-02-07）
 
-### 🚀 快速导航
-- [快速开始](#-快速开始)
-- [工具索引](#-工具索引)
-- [最新更新](#-最新更新)
+| 厂商 | 最新模型 | 发布时间 | 输入（¥/百万tokens） | 输出（¥/百万tokens） | 缓存（¥/百万tokens） | 开发者 Console | 体验入口 |
+|:---|:---|:---|:---:|:---:|:---:|:---|:---|
+| **OpenAI** | GPT-5.3-Codex | `2026-02-05` | `12.6` | `100.8` | `1.26` | [platform.openai.com](https://platform.openai.com/) | [chatgpt.com](https://chatgpt.com/) |
+| **OpenAI** | GPT-5.2 Pro | `2025-12-10` | `151.2` | `1209.6` | 不支持缓存 | [platform.openai.com](https://platform.openai.com/) | [chatgpt.com](https://chatgpt.com/) |
+| **Anthropic** | Claude Opus 4.6 | `2026-02-05` | `36` | `180` | `3.6`（读）`45`（写） | [console.anthropic.com](https://console.anthropic.com/) | [claude.ai](https://claude.ai/) |
+| **Anthropic** | Claude Sonnet 4.5 | `2025-10-01` | `21.6` | `108` | `2.16`（读）`27`（写） | [console.anthropic.com](https://console.anthropic.com/) | [claude.ai](https://claude.ai/) |
+| **Anthropic** | Claude Haiku 4.5 | `2025-10-15` | `7.2` | `36` | `0.72`（读）`9`（写） | [console.anthropic.com](https://console.anthropic.com/) | [claude.ai](https://claude.ai/) |
+| **Google** | Gemini 3 Pro（≤200k） | `2025-11-18` | `14.4` | `86.4` | `1.44`（≤200k）`2.88`（>200k）存储`32.4`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
+| **Google** | Gemini 3 Pro（>200k） | `2025-11-18` | `28.8` | `129.6` | `2.88` 存储`32.4`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
+| **Google** | Gemini 3 Flash | `2025-12-17` | `3.6` | `21.6` | `0.36` 存储`32.4`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
+| **xAI** | Grok 4.1 Fast | `2025-11-17` | `1.44` | `3.6` | `0.36` | [console.x.ai](https://console.x.ai/) | [grok.com](https://grok.com/) |
+| **xAI** | Grok 4 | `2025-07-09` | `21.6` | `108` | `5.4` | [console.x.ai](https://console.x.ai/) | [grok.com](https://grok.com/) |
+| **DeepSeek** | DeepSeek-V3.2 | `2025-12-01` | `1.94` | `7.92` | `0.50` | [platform.deepseek.com](https://platform.deepseek.com/) | [chat.deepseek.com](https://chat.deepseek.com/) |
+| **Moonshot (Kimi)** | Kimi K2.5 | `2026-01-27` | `3.24-4.32` | `18-21.6` | `0.72-1.08` | [platform.moonshot.cn](https://platform.moonshot.cn/) | [kimi.com](https://www.kimi.com/) |
+| **Zhipu / GLM** | GLM-4.7 | `2025-12-22` | `2.88` | `10.8` | `0.41`（读）`0.41-0.79`（写） | [open.bigmodel.cn](https://open.bigmodel.cn/) | [chat.z.ai](https://chat.z.ai/) |
+| **MiniMax** | MiniMax-M2.1 | `2025-12-23` | `2.16` | `8.64` | `0.22`（读）`2.7`（写） | [platform.minimax.io](https://platform.minimax.io/) | [chat.minimax.io](https://chat.minimax.io/) |
+| **StepFun** | Step-3.5-Flash | `2026-02` | `0.70`（未命中）`0.14`（命中） | `2.10` | `0.14`（命中时按20%计费） | [platform.stepfun.com](https://platform.stepfun.com/) | [stepfun.com](https://stepfun.com/) |
+| **StepFun** | Step3 | `2025-07-31` | `1.5-4`（未命中）`0.3-0.8`（命中） | `4-10` | `0.3-0.8`（命中时按20%计费，视上下文长度） | [platform.stepfun.com](https://platform.stepfun.com/) | [stepfun.com](https://stepfun.com/) |
+| **Qwen** | Qwen3 Max | `2025-09-23` | `8.64` | `43.2` | `1.73`（读） | [bailian.console.aliyun.com](https://bailian.console.aliyun.com/) | [chat.qwen.ai](https://chat.qwen.ai/) |
+| **Qwen** | Qwen3 Coder Plus | `2025-09-23` | `7.2` | `36` | `0.72` | [bailian.console.aliyun.com](https://bailian.console.aliyun.com/) | [chat.qwen.ai](https://chat.qwen.ai/) |
+| **Qwen** | Qwen3-Coder-Next | `2026-02-03` | 本地部署模型，无官方API | 本地部署模型，无官方API | `-` | [bailian.console.aliyun.com](https://bailian.console.aliyun.com/) | [chat.qwen.ai](https://chat.qwen.ai/) |
+| **Qwen** | Qwen3 Coder 480B | `2025-07-23` | `1.58` | `6.84` | 不支持缓存 | [bailian.console.aliyun.com](https://bailian.console.aliyun.com/) | [chat.qwen.ai](https://chat.qwen.ai/) |
+| **文心（百度千帆）** | ERNIE-5.0-0110 | `2026-01-15` | `4` | `16` | 缓存价格待官方公布 | [console.bce.baidu.com/qianfan](https://console.bce.baidu.com/qianfan/overview) | [yiyan.baidu.com](https://yiyan.baidu.com/) |
+| **豆包 / 火山方舟** | Doubao-Seed-Code | `2025-12-03` | `1.22`（≤32k） | `8.06` | `0.24`（读） | [console.volcengine.com/ark](https://console.volcengine.com/ark) | [doubao.com](https://www.doubao.com/) |
+| **腾讯混元** | HY 2.0 Think / Instruct | `2025-12-05` | `4` | `16` | 缓存价格待官方公布 | [console.cloud.tencent.com/hunyuan](https://console.cloud.tencent.com/hunyuan) | [yuanbao.tencent.com](https://yuanbao.tencent.com/) |
+| **LongCat（美团）** | LongCat-Flash-Thinking-2601 | `2026-01-16` | `1.44` | `5.76` | 缓存价格待官方公布 | [longcat.ai](https://longcat.ai/) | [longcat.ai](https://longcat.ai/) |
+| **LongCat（美团）** | LongCat-Flash-Chat | `2025-09-09` | `1.44` | `5.76` | 缓存价格待官方公布 | [longcat.ai](https://longcat.ai/) | [longcat.ai](https://longcat.ai/) |
+| **MiMo（小米）** | MiMo-V2-Flash | `2025-12-14` | `0.65` | `2.09` | `0.14`（读） | [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo) | [mimo.xiaomi.com](https://mimo.xiaomi.com/) |
 
-### 📊 核心内容
-- [前沿模型厂商情报](#-前沿模型厂商情报)
-- [AI Coding CLI 工具](#-ai-coding-cli-工具)
-- [IDE 扩展生态](#-ide-扩展生态)
-- [平台与生态](#-平台与生态)
-- [国产生态](#-国产生态)
+### 更新日志
 
-### 🛠️ 实用指南
-- [按操作系统安装](#-按操作系统一键安装)
-- [价格对比](#-价格对比)
-- [Coding Plan 方案](#-coding-plan-方案)
-- [初学者学习路径](#-初学者学习路径)
-
-### 📚 参考资源
-- [Skills / MCP 生态](#-skills--mcp--规则生态)
-- [数据来源](#-数据来源)
-
-</details>
-
----
-
-## 🚀 快速开始
-
-### 新手推荐路径
-
-<details>
-<summary><b>🎯 5 分钟快速上手</b></summary>
-
-1. **选择你的工具**：根据操作系统和偏好选择
-   - macOS/Linux：推荐 `Claude Code` 或 `Codex CLI`
-   - Windows：推荐 `Qwen Code` 或 `Codex CLI`
-   - 需要 IDE 集成：推荐 `Continue` 或 `Cline`
-
-2. **一键安装**：跳转到 [按操作系统安装](#-按操作系统一键安装) 章节
-
-3. **验证安装**：运行工具命令，完成首次配置
-
-</details>
-
-### 工具分类速览
-
-| 类型 | 推荐工具 | 特点 |
-|:---:|:---|:---|
-| **CLI 主力** | Claude Code, Codex CLI, Gemini CLI | 终端命令行，适合自动化 |
-| **IDE 扩展** | Continue, Cline, Roo Code | 编辑器内集成，适合日常开发 |
-| **平台生态** | Ollama, LiteLLM, Dify | 多模型管理，适合企业场景 |
-| **国产生态** | Qwen Code, Kimi CLI, Dify | 国内可用，中文支持好 |
-
----
-
-## 📊 工具索引
-
-> **快速筛选**：形态 `CLI` / `IDE` / `Platform` • 许可 `开源` / `闭源` • 生态 `国产` / `国际`
-
-<details>
-<summary><b>点击展开完整索引表</b></summary>
-
-| Tool | 形态 | 开源/闭源 | 是否国产 | 入口 | Stars |
-|:---|:---:|:---:|:---:|:---|:---:|
-| **Claude Code** | CLI | ✅ 开源 | 🌍 国际 | [repo](https://github.com/anthropics/claude-code) | 64.9k |
-| **Codex CLI** | CLI | ✅ 开源 | 🌍 国际 | [repo](https://github.com/openai/codex) | 59.3k |
-| **Gemini CLI** | CLI | ✅ 开源 | 🌍 国际 | [repo](https://github.com/google-gemini/gemini-cli) | 93.8k |
-| **Qwen Code** | CLI | ✅ 开源 | 🇨🇳 国产 | [repo](https://github.com/QwenLM/qwen-code) | 18.2k |
-| **Kimi Code CLI** | CLI | ✅ 开源 | 🇨🇳 国产 | [repo](https://github.com/MoonshotAI/kimi-cli) | 6.1k |
-| **GitHub Copilot CLI** | CLI | ✅ 开源 | 🌍 国际 | [repo](https://github.com/github/copilot-cli) | 8.1k |
-| **Continue CLI** | CLI | ✅ 开源 | 🌍 国际 | [repo](https://github.com/continuedev/continue) | 31.3k |
-| **Aider** | CLI | ✅ 开源 | 🌍 国际 | [repo](https://github.com/Aider-AI/aider) | 40.4k |
-| **Goose** | CLI/Platform | ✅ 开源 | 🌍 国际 | [repo](https://github.com/block/goose) | 30.0k |
-| **OpenCode** | CLI/Platform | ✅ 开源 | 🌍 国际 | [repo](https://github.com/anomalyco/opencode) | 99.3k |
-| **OpenHands CLI** | CLI | ✅ 开源 | 🌍 国际 | [repo](https://github.com/OpenHands/OpenHands-CLI) | 99 |
-| **Cursor CLI / Agent** | CLI/IDE | ⚠️ 闭源 | 🌍 国际 | [docs](https://docs.cursor.com/en/agent/cli) | - |
-| **CodeBuddy CLI** | CLI | ⚠️ 待核验 | 🇨🇳 国产 | [ref](https://cloud.tencent.com/developer/article/2556464) | - |
-| **Cline** | IDE | ✅ 开源 | 🌍 国际 | [repo](https://github.com/cline/cline) | 57.7k |
-| **Roo Code** | IDE | ✅ 开源 | 🌍 国际 | [repo](https://github.com/RooCodeInc/Roo-Code) | 22.1k |
-| **Continue Extension** | IDE | ✅ 开源 | 🌍 国际 | [repo](https://github.com/continuedev/continue) | 31.3k |
-| **Augment Code** | IDE | ⚠️ 闭源 | 🌍 国际 | [Marketplace](https://marketplace.visualstudio.com/items?itemName=augment.vscode-augment) / [org](https://github.com/augmentcode) | - |
-| **gh-copilot** | IDE/CLI 扩展 | ✅ 开源 | 🌍 国际 | [repo](https://github.com/github/gh-copilot) | 1.1k |
-| **Ollama** | Platform | ✅ 开源 | 🌍 国际 | [repo](https://github.com/ollama/ollama) | - |
-| **LiteLLM** | Platform | ✅ 开源 | 🌍 国际 | [repo](https://github.com/BerriAI/litellm) | - |
-| **OpenHands** | Platform | ⚠️ 混合 | 🌍 国际 | [repo](https://github.com/OpenHands/OpenHands) | - |
-| **Cherry Studio** | IDE/Desktop | ✅ 开源 | 🇨🇳 国产 | [repo](https://github.com/CherryHQ/cherry-studio) | 39.4k |
-| **FastGPT** | Platform | ✅ 开源 | 🇨🇳 国产 | [repo](https://github.com/labring/FastGPT) | 27.1k |
-| **RAGFlow** | Platform | ✅ 开源 | 🇨🇳 国产 | [repo](https://github.com/infiniflow/ragflow) | 72.9k |
-| **Dify** | Platform | ✅ 开源 | 🇨🇳 国产 | [repo](https://github.com/langgenius/dify) | 129.0k |
-| **ModelScope SDK** | Platform/SDK | ✅ 开源 | 🇨🇳 国产 | [repo](https://github.com/modelscope/modelscope) | 8.7k |
-| **MCP Reference Servers** | Platform/Protocol | ✅ 开源 | 🌍 国际 | [repo](https://github.com/modelcontextprotocol/servers) | 78.2k |
-
-> ⭐ Stars 快照时间：2026-02-07（通过 `gh api` 抓取）
-
-</details>
+| 日期 | 厂商 | 更新内容 |
+|:---|:---|:---|
+| `2026-02-05` | OpenAI | GPT-5.3-Codex 发布 |
+| `2026-02-05` | Anthropic | Claude Opus 4.6 发布 |
+| `2026-02-03` | Qwen | Qwen3-Coder-Next 发布 |
+| `2026-02` | StepFun | Step-3.5-Flash 发布 |
+| `2026-01-27` | Moonshot | Kimi K2.5 发布 |
+| `2026-01-16` | LongCat | LongCat-Flash-Thinking-2601 发布 |
+| `2026-01-15` | 百度 | ERNIE-5.0-0110 发布 |
+| `2025-12-23` | MiniMax | MiniMax-M2.1 发布 |
+| `2025-12-22` | Zhipu | GLM-4.7 发布 |
+| `2025-12-17` | Google | Gemini 3 Flash 发布 |
+| `2025-12-14` | MiMo | MiMo-V2-Flash 发布 |
+| `2025-12-10` | OpenAI | GPT-5.2 Pro 发布 |
+| `2025-12-05` | 腾讯 | HY 2.0 Think/Instruct 发布 |
+| `2025-12-03` | 豆包 | Doubao-Seed-Code 发布 |
+| `2025-12-01` | DeepSeek | DeepSeek-V3.2 发布 |
+| `2025-11-18` | Google | Gemini 3 Pro 发布 |
+| `2025-11-17` | xAI | Grok 4.1 Fast 发布 |
+| `2025-10-15` | Anthropic | Claude Haiku 4.5 发布 |
+| `2025-10-01` | Anthropic | Claude Sonnet 4.5 发布 |
+| `2025-09-23` | Qwen | Qwen3 Max / Qwen3 Coder Plus 发布 |
+| `2025-09-09` | LongCat | LongCat-Flash-Chat 发布 |
+| `2025-07-31` | StepFun | Step3 发布 |
+| `2025-07-23` | Qwen | Qwen3 Coder 480B 发布 |
+| `2025-07-09` | xAI | Grok 4 发布 |
 
 ---
 
-## 🔄 最新更新
+## 2. CLI 开发工具
 
-> **核验日期**：`2026-02-07`
+### 2.1 国外付费使用
 
-### ✨ 已确认变更
+| Tool | Repo | Docs | 安装命令 | Stars | 免费额度/体验 | 备注 |
+|:---|:---|:---|:---|:---:|:---|:---|
+| **Claude Code** | [anthropics/claude-code](https://github.com/anthropics/claude-code) | [code.claude.com/docs](https://code.claude.com/docs/en/overview) | `curl -fsSL https://claude.ai/install.sh \| bash` | 64.9k | 免费账户：约 40 条消息/天（Claude Sonnet 4） | 需 Anthropic API key |
+| **Codex CLI** | [openai/codex](https://github.com/openai/codex) | [developers.openai.com/codex](https://developers.openai.com/codex) | `npm i -g @openai/codex` | 59.3k | 免费 ChatGPT 包含基础 Codex 功能（受限） | 需 OpenAI 订阅或 API key |
+| **GitHub Copilot CLI** | [github/copilot-cli](https://github.com/github/copilot-cli) | [GitHub docs](https://docs.github.com/copilot/concepts/agents/about-copilot-cli) | `brew install copilot-cli` 或 `npm i -g @github/copilot` | 8.1k | 免费计划：2000 条内联建议/月，50 次高级请求/月 | 需 GitHub Copilot 订阅 |
+| **Cursor CLI / Agent** | [cursor/cursor](https://github.com/cursor/cursor) | [Cursor docs](https://docs.cursor.com/en/agent/cli) | 按官方文档安装 | 32.2k | Hobby 免费计划：有限的 Agent 请求和 Tab 补全 | 需 Cursor 订阅 |
+| **Gemini CLI** | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | [geminicli.com/docs](https://geminicli.com/docs/) | `npm i -g @google/gemini-cli` | 93.8k | 免费：1000 次/天（Google 账户），250 次/天（API key，仅 Flash） | 需 Google API key |
+| **Tabnine CLI** | [codota/TabNine](https://github.com/codota/TabNine) | [Tabnine docs](https://docs.tabnine.com/main/getting-started/tabnine-cli) | `docker pull ghcr.io/codota/tabnine-cli:latest` | 10.8k | 90 天免费试用 | 企业级，需订阅（2026-01 发布） |
 
-| 厂商 | 更新内容 | 发布时间 | 来源 |
-|:---|:---|:---|:---|
-| **OpenAI** | `GPT-5.3-Codex` 发布 | `2026-02-05` | [官方发布页](https://openai.com/index/introducing-gpt-5-3-codex/) |
-| **Anthropic** | `Claude Opus 4.6` 发布 | `2026-02-05` | [Anthropic Newsroom](https://www.anthropic.com/newsroom) |
-| **Moonshot** | `Kimi K2.5` 发布 | `2026-01-27` | [Kimi 官方模型页](https://www.kimi.com/model) |
+### 2.2 国内/自定义 API 使用
 
----
-
-## 🌟 前沿模型厂商情报
-
-> **核验日期**：`2026-02-07`  
-> **口径说明**：仅收录官方文档/官方公告/官方仓库可核验信息
-
-<details>
-<summary><b>点击展开完整模型情报表</b></summary>
-
-| 厂商 | 最新模型 | 发布时间 | Benchmark 摘要 | API 成本（1M tokens） | 开发者 Console | 体验入口 |
-|:---|:---|:---|:---|:---|:---|:---|
-| **OpenAI** | GPT-5.3-Codex | `2026-02-05` | SWE-Bench Verified、Aider Polyglot 等编码基准新高 | GPT-5: Input `$1.25`, Cached `$0.125`, Output `$10`<br>GPT-5 mini: `$0.25/$0.025/$2` | [platform.openai.com](https://platform.openai.com/) | [chatgpt.com](https://chatgpt.com/) |
-| **Anthropic** | Claude Opus 4.6 | `2026-02-05` | Terminal-Bench 2.0、SWE-Bench Verified 等领先表现 | Sonnet: `$3/$15`<br>Haiku: `$1/$5` | [console.anthropic.com](https://console.anthropic.com/) | [claude.ai](https://claude.ai/) |
-| **Google** | Gemini 2.5 Pro/Flash | 见 [Release Notes](https://ai.google.dev/gemini-api/docs/release-notes) | 官方持续更新 benchmark | Gemini 2.5 Pro: Input `$1.25`, Output `$10` | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
-| **xAI** | Grok 4.1 / Grok 4 | `2025-11-17` / `2025-07-09` | 数学与编码场景性能声明 | 以 [docs.x.ai/models](https://docs.x.ai/docs/models) 实时显示为准 | [console.x.ai](https://console.x.ai/) | [grok.com](https://grok.com/) |
-| **DeepSeek** | DeepSeek-V3.2-Exp | `2025-09-29` | 编码与前端能力增强 | Cache Hit `$0.028`, Miss `$0.28`, Output `$0.42` | [platform.deepseek.com](https://platform.deepseek.com/) | [chat.deepseek.com](https://chat.deepseek.com/) |
-| **Moonshot (Kimi)** | Kimi K2.5 | `2026-01-27` | HLE、BrowseComp、SWE-Bench Verified 等 | 以 [Moonshot 平台](https://platform.moonshot.cn/) 实时价格为准 | [platform.moonshot.cn](https://platform.moonshot.cn/) | [kimi.com](https://www.kimi.com/) |
-| **Zhipu / GLM** | GLM-4.7 / GLM-4.6V | `2026-01-12` | 多项 benchmark 对比 | 以 [docs.z.ai 定价页](https://docs.z.ai/guides/models/pricing) 为准 | [open.bigmodel.cn](https://open.bigmodel.cn/) | [chat.z.ai](https://chat.z.ai/) |
-| **MiniMax** | MiniMax-M2.1 | `2026-01-15` | VibeCodingBench 等指标 | 以 [MiniMax Pricing](https://www.minimax.io/platform/document/price) 实时显示为准 | [platform.minimax.io](https://platform.minimax.io/) | [chat.minimax.io](https://chat.minimax.io/) |
-| **StepFun** | Step-3.5 | `2026-02-01` | GPQA、AIME、SWE-Bench、MMLU 等基准提升 | 以 [StepFun Pricing](https://platform.stepfun.com/docs/pricing/details) 实时显示为准 | [platform.stepfun.com](https://platform.stepfun.com/) | [stepfun.com](https://stepfun.com/) |
-| **Qwen / 阿里云百炼** | Qwen3-Coder | `2025-07-22` | 官方博客/百炼文档更新能力对比 | 以 [百炼计费文档](https://help.aliyun.com/zh/model-studio/billing-of-model-studio) 为准 | [bailian.console.aliyun.com](https://bailian.console.aliyun.com/) | [chat.qwen.ai](https://chat.qwen.ai/) |
-| **文心（百度千帆）** | ERNIE-5.0 | `2026-01-08` | 官方文档给出模型能力与场景说明 | 输入 `¥0.004/千token`，输出 `¥0.016/千token` | [console.bce.baidu.com/qianfan](https://console.bce.baidu.com/qianfan/overview) | [yiyan.baidu.com](https://yiyan.baidu.com/) |
-| **豆包 / 火山方舟** | 豆包系列 | 见方舟文档 | 官方文档持续更新能力说明 | 以 [方舟定价文档](https://www.volcengine.com/docs/82379/1099320) 为准 | [console.volcengine.com/ark](https://console.volcengine.com/ark) | [doubao.com](https://www.doubao.com/) |
-| **腾讯混元** | hunyuan-t1-latest | `2026-02-05` | 官方文档持续补充场景与模型能力 | 输入 `¥4/百万token`，输出 `¥16/百万token` | [console.cloud.tencent.com/hunyuan](https://console.cloud.tencent.com/hunyuan) | [yuanbao.tencent.com](https://yuanbao.tencent.com/) |
-| **LongCat（美团）** | LongCat-Flash-Chat | `2025` | MMLU、AIME、SWE-bench、TerminalBench、τ²-Bench 等 | 公开仓库未提供统一 API 商业计费页 | [longcat.ai](https://longcat.ai/) | [longcat.ai](https://longcat.ai/) |
-| **MiMo（小米）** | MiMo-7B-RL-0530 | `2025-05-30` | AIME24 `80.1`、LCB v5 `60.9`、GPQA `60.6` 等 | 开源模型仓库口径，未给官方统一 API 商业价 | [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo) | 开源模型为主 |
-
-</details>
-
----
-
-## 💻 AI Coding CLI 工具
-
-> **终端主力工具**：适合命令行工作流和自动化场景
-
-| Tool | Official Repo | Docs / Site | Install (Quick) | 类型 | Stars |
-|:---|:---|:---|:---|:---|:---:|
-| **Claude Code** | [anthropics/claude-code](https://github.com/anthropics/claude-code) | [code.claude.com/docs](https://code.claude.com/docs/en/overview) | `curl -fsSL https://claude.ai/install.sh \| bash` | CLI Agent | 64.9k |
-| **Codex CLI** | [openai/codex](https://github.com/openai/codex) | [developers.openai.com/codex](https://developers.openai.com/codex) | `npm i -g @openai/codex` | CLI Agent | 59.3k |
-| **Gemini CLI** | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | [geminicli.com/docs](https://geminicli.com/docs/) | `npm i -g @google/gemini-cli` | CLI Agent | 93.8k |
-| **Qwen Code** | [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) | [qwen docs](https://qwenlm.github.io/qwen-code-docs/en/users/overview) | `npm i -g @qwen-code/qwen-code@latest` | CLI Agent | 18.2k |
-| **Kimi Code CLI** | [MoonshotAI/kimi-cli](https://github.com/MoonshotAI/kimi-cli) | [kimi.com/code](https://www.kimi.com/code/) | `pip install kimi-cli` | CLI Agent | 6.1k |
-| **GitHub Copilot CLI** | [github/copilot-cli](https://github.com/github/copilot-cli) | [GitHub docs](https://docs.github.com/copilot/concepts/agents/about-copilot-cli) | `brew install copilot-cli` | CLI Agent | 8.1k |
-| **Continue CLI** | [continuedev/continue](https://github.com/continuedev/continue) | [docs.continue.dev](https://docs.continue.dev) | `npm i -g @continuedev/cli` | CLI + IDE | 31.3k |
-| **Aider** | [Aider-AI/aider](https://github.com/Aider-AI/aider) | [aider.chat](https://aider.chat/docs/install.html) | `python -m pip install aider-install && aider-install` | CLI Agent | 40.4k |
-| **Goose** | [block/goose](https://github.com/block/goose) | [block.github.io/goose](https://block.github.io/goose/docs/quickstart) | 见官方安装页 | CLI/Desktop Agent | 30.0k |
-| **OpenCode** | [anomalyco/opencode](https://github.com/anomalyco/opencode) | [opencode.ai/docs](https://opencode.ai/docs) | `curl -fsSL https://opencode.ai/install \| bash` | CLI/Desktop Agent | 99.3k |
-| **OpenHands CLI** | [OpenHands/OpenHands-CLI](https://github.com/OpenHands/OpenHands-CLI) | [OpenHands CLI docs](https://docs.openhands.dev/openhands/usage/cli/installation) | `uv tool install openhands --python 3.12` | CLI Agent | 99 |
-| **Cursor CLI / Agent** | N/A | [Cursor docs](https://docs.cursor.com/en/agent/cli) | 按官方文档安装 | CLI / IDE Agent | - |
-| **CodeBuddy CLI** | N/A | [腾讯云活动文档示例](https://cloud.tencent.com/developer/article/2556464) | 建议先核验官方产品页再安装 | CLI (待核验) | - |
+| Tool | Repo | Docs | 安装命令 | Stars | 免费额度/体验 | 备注 |
+|:---|:---|:---|:---|:---:|:---|:---|
+| **Qwen Code** | [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) | [qwen docs](https://qwenlm.github.io/qwen-code-docs/en/users/overview) | `npm i -g @qwen-code/qwen-code@latest` | 18.2k | 2000 次请求/天（Qwen OAuth 账户，促销期） | 支持 Qwen API，可自定义 |
+| **Kimi Code CLI** | [MoonshotAI/kimi-cli](https://github.com/MoonshotAI/kimi-cli) | [kimi docs](https://moonshotai.github.io/kimi-cli/en/) | `pip install kimi-cli` | 6.1k | 免费安装，需配置 API（Kimi K2.5 曾有一周免费） | 支持 Moonshot API，可自定义 |
+| **腾讯 CodeBuddy Code** | [Tencent](https://www.codebuddy.ai/) | [CodeBuddy docs](https://www.codebuddy.ai/docs/cli/quickstart) | `npm i -g @tencent-ai/codebuddy-code` | - | 永久免费基础版：2000 次/月 | 国产，支持腾讯 API |
+| **Continue CLI** | [continuedev/continue](https://github.com/continuedev/continue) | [docs.continue.dev](https://docs.continue.dev) | `npm i -g @continuedev/cli` | 31.3k | Solo 计划免费，可自带 API key 或购买 credits | 开源，支持多种 API |
+| **Aider** | [Aider-AI/aider](https://github.com/Aider-AI/aider) | [aider.chat](https://aider.chat/docs/install.html) | `python -m pip install aider-install && aider-install` | 40.4k | 开源免费，需自带 API key | 开源，支持 DeepSeek 等国内 API |
+| **Goose** | [block/goose](https://github.com/block/goose) | [block.github.io/goose](https://block.github.io/goose/docs/quickstart) | 见官方安装页 | 30.0k | 新用户 $10 免费 credits（通过 Tetrate） | 开源，支持自定义 API |
+| **OpenCode** | [anomalyco/opencode](https://github.com/anomalyco/opencode) | [opencode.ai/docs](https://opencode.ai/docs) | `curl -fsSL https://opencode.ai/install \| bash` | 99.3k | 开源免费，需自带 API key | 开源，支持 75+ LLM 提供商 |
+| **OpenHands CLI** | [OpenHands/OpenHands-CLI](https://github.com/OpenHands/OpenHands-CLI) | [OpenHands CLI docs](https://docs.openhands.dev/openhands/usage/cli/installation) | `uv tool install openhands --python 3.12` | 93 | 新用户 $10 免费 credits，本地版本免费 | 开源，支持自定义 API |
+| **Cline CLI** | [cline/cline](https://github.com/cline/cline) | [Cline docs](https://docs.cline.bot/cline-cli/overview) | `npm i -g cline` | 57.6k | 个人开发者免费，新用户有限免费 credits | 开源，支持多种 API（CLI 预览版） |
+| **Termineer** | - | [termineer.io](https://termineer.io/) | `npm i -g termineer` | - | 需查询官方定价 | 支持 Claude、Gemini、OpenRouter（闭源） |
 
 > ⭐ Stars 快照时间：2026-02-07
 
 ---
 
-## 🔌 IDE 扩展生态
+## 3. IDE 开发插件
 
-> **编辑器内集成**：适合日常开发工作流
+### 3.1 国外付费使用
 
-| Tool | Repo / Marketplace | 安装方式 | 备注 | Stars |
-|:---|:---|:---|:---|:---:|
-| **Cline** | [cline/cline](https://github.com/cline/cline) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) | VS Code 扩展市场安装 | 高活跃，偏 VS Code 工作流 | 57.7k |
-| **Roo Code** | [RooCodeInc/Roo-Code](https://github.com/RooCodeInc/Roo-Code) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline) | VS Code 扩展市场安装 | "编辑器内多 agent 团队"定位 | 22.1k |
-| **Continue** | [continuedev/continue](https://github.com/continuedev/continue) / [Continue Marketplace](https://marketplace.visualstudio.com/items?itemName=Continue.continue) | VS Code/JetBrains 插件安装 | CLI + IDE 双形态 | 31.3k |
-| **Augment Code** | [augmentcode](https://github.com/augmentcode) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=augment.vscode-augment) | VS Code 扩展市场安装 | 强大的上下文引擎，支持 1 亿行代码库，包含 Agent/Chat/Completions/Next Edit/Instructions | 693k+ |
-| **GitHub CLI Copilot Extension** | [github/gh-copilot](https://github.com/github/gh-copilot) | `gh extension install github/gh-copilot` | 注意它是 `gh` 扩展，不是新版 `copilot-cli` | 1.1k |
+| Tool | Repo / Marketplace | 安装方式 | Stars | 免费额度/体验 | 备注 |
+|:---|:---|:---|:---:|:---|:---|
+| **GitHub Copilot** | [github/copilot](https://github.com/github/copilot) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) | VS Code 扩展市场安装 | - | 免费计划：2000 次内联补全/月，50 次高级请求/月 | 需 GitHub 账户 |
+| **Tabnine** | [codota/TabNine](https://github.com/codota/TabNine) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode) | VS Code 扩展市场安装 | 10.8k | 无免费版 | $59/用户/月（企业级） |
+| **Augment Code** | [augmentcode](https://github.com/augmentcode) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=augment.vscode-augment) | VS Code 扩展市场安装 | 693k+ | 无免费版 | $20/月起（Indie 计划） |
+| **Bito** | [bito-ai/bito](https://github.com/bito-ai/bito) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=BitoAI.bito) | VS Code/JetBrains 插件安装 | - | 14 天免费试用 | $12/月起（Team 计划） |
+| **Amazon CodeWhisperer** | [aws/amazon-codewhisperer](https://github.com/aws/amazon-codewhisperer) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-toolkits) | VS Code/JetBrains 插件安装 | - | 免费个人版：50 次安全扫描/月 | 需 AWS Builder ID |
+| **JetBrains AI Assistant** | [JetBrains](https://www.jetbrains.com/ai-assistant/) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=jetbrains.jetbrains-ai-assistant) | VS Code/JetBrains 插件安装 | - | AI Free：3 个 AI 点数/30 天 | 支持本地模型 |
 
----
+### 3.2 国内/自定义 API 使用
 
-## 🏗️ 平台与生态
-
-> **多模型管理平台**：适合企业场景和复杂工作流
-
-| Project | Link | 用途 | Stars |
-|:---|:---|:---|:---:|
-| **Ollama** | [ollama/ollama](https://github.com/ollama/ollama) | 本地模型运行平台 | - |
-| **LiteLLM** | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 统一多模型 API 代理 | - |
-| **OpenHands** | [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 开源+企业版混合平台 | - |
-| **MCP Reference Servers** | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | 官方 MCP 参考实现（Filesystem/Git/Fetch 等） | 78.2k |
-
----
-
-## 🇨🇳 国产生态
-
-> **国内可用工具**：优先收录国内团队主导、国内可用且有公开仓库/文档的项目
-
-| Tool | Official Repo | Docs / Site | Install (Quick) | 类型 | Stars |
-|:---|:---|:---|:---|:---|:---:|
-| **Qwen Code** | [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) | [qwen docs](https://qwenlm.github.io/qwen-code-docs/en/users/overview) | `npm i -g @qwen-code/qwen-code@latest` | CLI Agent | 18.2k |
-| **Kimi Code CLI** | [MoonshotAI/kimi-cli](https://github.com/MoonshotAI/kimi-cli) | [kimi docs](https://moonshotai.github.io/kimi-cli/en/) | `pip install kimi-cli` | CLI Agent | 6.1k |
-| **Cherry Studio** | [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | [cherry-ai.com](https://cherry-ai.com) | 从 Releases 下载安装包 | 桌面多模型客户端 | 39.4k |
-| **FastGPT** | [labring/FastGPT](https://github.com/labring/FastGPT) | [fastgpt.io](https://fastgpt.io) | `docker compose up -d` | RAG/工作流平台 | 27.1k |
-| **RAGFlow** | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | [ragflow.io](https://ragflow.io) | `docker compose -f docker-compose.yml up -d` | RAG 平台 | 72.9k |
-| **Dify** | [langgenius/dify](https://github.com/langgenius/dify) | [dify.ai](https://dify.ai) | `cd docker && docker compose up -d` | LLM 应用平台 | 129.0k |
-| **ModelScope SDK** | [modelscope/modelscope](https://github.com/modelscope/modelscope) | [modelscope.cn](https://www.modelscope.cn/) | `pip install modelscope` | 模型生态 SDK | 8.7k |
+| Tool | Repo / Marketplace | 安装方式 | Stars | 免费额度/体验 | 备注 |
+|:---|:---|:---|:---:|:---|:---|
+| **Cline** | [cline/cline](https://github.com/cline/cline) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) | VS Code 扩展市场安装 | 57.7k | 个人开发者免费，Teams Q1 2026 前免费 | 开源，可自带 API key |
+| **Roo Code** | [RooCodeInc/Roo-Code](https://github.com/RooCodeInc/Roo-Code) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline) | VS Code 扩展市场安装 | 22.1k | 完全免费（本地使用），Cloud 免费版 | 开源，可自带 API key |
+| **Continue** | [continuedev/continue](https://github.com/continuedev/continue) / [Continue Marketplace](https://marketplace.visualstudio.com/items?itemName=Continue.continue) | VS Code/JetBrains 插件安装 | 31.3k | Solo 计划免费 | 开源，可自带 API key |
+| **Codeium (Windsurf)** | [codeium](https://codeium.com/) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=Codeium.codeium) | VS Code/JetBrains 插件安装 | - | 免费：25 credits/月 | 支持 70+ IDE |
+| **通义灵码** | [阿里云](https://tongyi.aliyun.com/lingma/) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=Aliyun.tongyi-lingma) | VS Code/JetBrains 插件安装 | - | 公测阶段完全免费 | 国产，基于通义千问 |
+| **百度 Comate** | [百度智能云](https://comate.baidu.com/) / [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=baidu-intl.comate) | VS Code/JetBrains 插件安装 | - | 个人标准版完全免费 | 国产，基于文心大模型 |
+| **GitHub CLI Copilot Extension** | [github/gh-copilot](https://github.com/github/gh-copilot) | `gh extension install github/gh-copilot` | 1.1k | 需 GitHub Copilot 订阅 | GitHub CLI 扩展 |
 
 ---
 
-## 🖥️ 按操作系统一键安装
+## 4. 原生 AI IDE
 
-> **用法**：先看你的系统，再直接复制对应区块命令  
-> **提示**：以下主要覆盖 CLI 工具；桌面工具（如 Cherry Studio）建议从 Release 安装包安装
+### 4.1 国际
 
-### 🍎 macOS
+| Tool | Repo / Site | 类型 | Stars | 免费额度/体验 | 备注 |
+|:---|:---|:---|:---:|:---|:---|
+| **Cursor** | [cursor/cursor](https://github.com/cursor/cursor) / [cursor.com](https://cursor.com/) | AI 原生 IDE | 32.2k | Hobby 免费：约 2000 次补全/月，50 次高级请求/月 | VS Code fork，支持自定义 API key |
+| **Windsurf** | [codeium](https://codeium.com/) / [windsurf.com](https://windsurf.com/) | AI 原生 IDE | - | 免费：25 credits/月，无限 Cascade、Tab 补全 | Codeium 演进版，$15/月起（Pro） |
+| **Google Antigravity** | [antigravity.google](https://antigravity.google/) | AI 原生 IDE | - | 免费预览版：无限 Tab 补全和 Command | 2025-11 发布，支持 5 个并行 Agent |
+| **v0.dev** | [vercel/v0](https://github.com/vercel/v0) / [v0.dev](https://v0.dev/) | AI Web 应用构建 | - | 免费：$5 credits/月，7 条消息/天 | Vercel 出品，专注于 UI 生成 |
+| **Replit** | [replit](https://replit.com/) | AI 云端 IDE | - | Starter 免费：每日 AI credits，1 个发布应用 | 云端开发环境 |
+| **AWS Kiro** | [kiro.dev](https://kiro.dev/) | AI 原生 IDE | - | 免费：50 credits/月，新用户 500 credits（30 天） | AWS 出品，$20/月起（Pro） |
+| **Zed** | [zed-industries/zed](https://github.com/zed-industries/zed) / [zed.dev](https://zed.dev/) | 高性能编辑器 | - | 免费：2000 次编辑预测/月，可自带 API key | 高性能 Rust 编辑器，$10/月起（Pro） |
+| **GitHub Copilot Workspace** | [githubnext/copilot-workspace-user-manual](https://github.com/githubnext/copilot-workspace-user-manual) / [github.com/features/copilot](https://github.com/features/copilot) | AI 原生 IDE | - | 技术预览已结束（2025-05-30） | 已停止服务 |
 
-```bash
-# Node-based CLIs
-npm i -g @openai/codex @google/gemini-cli @qwen-code/qwen-code@latest @github/copilot opencode-ai
+### 4.2 国内
 
-# Python-based CLIs / SDKs
-python -m pip install --upgrade pip
-python -m pip install aider-install litellm modelscope kimi-cli
-
-# Install and run
-codex
-gemini
-qwen
-copilot
-```
-
-### 🐧 Linux
-
-```bash
-# Official install scripts
-curl -fsSL https://claude.ai/install.sh | bash
-curl -fsSL https://opencode.ai/install | bash
-curl -fsSL https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen.sh | bash
-curl -fsSL https://ollama.com/install.sh | sh
-
-# npm path
-npm i -g @openai/codex @google/gemini-cli @github/copilot @continuedev/cli
-
-# Python path
-python -m pip install aider-install litellm modelscope kimi-cli
-```
-
-### 🪟 Windows (PowerShell)
-
-```powershell
-# Script-based installers
-irm https://claude.ai/install.ps1 | iex
-curl -fsSL -o $env:TEMP\install-qwen.bat https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen.bat
-& $env:TEMP\install-qwen.bat
-
-# winget / npm
-winget install GitHub.Copilot
-npm i -g @openai/codex @google/gemini-cli @github/copilot
-
-# Python
-py -m pip install aider-install litellm modelscope kimi-cli
-```
+| Tool | Repo / Site | 类型 | Stars | 免费额度/体验 | 备注 |
+|:---|:---|:---|:---:|:---|:---|
+| **Trae（国内版）** | [trae.com.cn](https://www.trae.com.cn/) / [trae.cn](https://www.trae.cn/) | AI 原生 IDE | - | 完全免费 | 字节跳动出品，集成 Doubao-1.5-pro、DeepSeek R1/V3（2025-03 发布） |
+| **Trae（国际版）** | [traeide.com](https://traeide.com/) / [trae.ai](https://www.trae.ai/) | AI 原生 IDE | - | 完全免费 | 字节跳动出品，支持 Claude 3.5-Sonnet、Claude 3.7-Sonnet、GPT-4o、DeepSeek R1/V3（截至 2026-02，尚未支持 Claude 4.6/GPT-5） |
+| **通义灵码 IDE (Lingma IDE)** | [tongyi.aliyun.com/lingma](https://tongyi.aliyun.com/lingma/) | AI 原生 IDE | - | 个人基础版永久免费，专业版限免中 | 阿里云出品，支持 VS Code 插件 |
+| **Cherry Studio** | [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 桌面多模型客户端 | 39.4k | 开源免费，支持免费模型 | 多模型 AI 客户端 |
+| **CodeGeeX** | [THUDM/CodeGeeX](https://github.com/THUDM/CodeGeeX) | AI 代码助手 | 8.7k | 个人用户完全免费 | 智谱 AI 出品，支持 15+ 语言 |
 
 ---
 
-## 💰 价格对比
-
-> **价格变化很快**，以下用于"入口导航 + 预算预估"，最终以官方链接实时价格为准
-
-| CLI | 官方入口 | 价格口径（2026-02-07 核验） |
-|:---|:---|:---|
-| **Claude Code** | [Anthropic Pricing](https://www.anthropic.com/pricing#api) / [Docs](https://docs.anthropic.com/en/docs/claude-code/costs) | 以模型 API token 计费为主（并受套餐限额影响） |
-| **Codex CLI** | [OpenAI Codex Pricing](https://developers.openai.com/codex/pricing/) | Plus `$20/月`，Pro `$200/月`，Business `$30/seat/月`，或 API token 计费 |
-| **Gemini CLI** | [Gemini CLI docs](https://geminicli.com/docs/) + [Gemini API Pricing](https://ai.google.dev/gemini-api/docs/pricing) | CLI 本身开源，实际成本取决于 Gemini API 用量 |
-| **Qwen Code** | [Qwen Code docs](https://qwenlm.github.io/qwen-code-docs/en/users/overview) + [百炼计费](https://help.aliyun.com/zh/model-studio/billing-of-model-studio) | CLI 开源，按百炼/所接模型计费 |
-| **Kimi CLI** | [Kimi CLI docs](https://moonshotai.github.io/kimi-cli/en/) | CLI 开源，按 Moonshot API 用量计费 |
-| **GitHub Copilot CLI** | [GitHub Docs](https://docs.github.com/copilot/concepts/agents/about-copilot-cli) | 通常随 Copilot 订阅层提供（Free/Pro/Business/Enterprise） |
-| **Aider** | [aider docs](https://aider.chat/docs/install.html) | 工具开源免费，按所用模型 API 计费 |
-| **OpenHands CLI** | [OpenHands CLI](https://docs.openhands.dev/openhands/usage/cli/installation) | 工具开源免费，按所连模型/服务计费 |
-
----
-
-## 📋 Coding Plan 方案
-
-> **官方 Coding Plan 订阅方案**：面向编码场景的订阅层
+## 5. CLI Coding Plan
 
 | 方案 | 官方入口 | 价格/计费 | 备注 |
 |:---|:---|:---|:---|
-| **Claude Code（Anthropic 官方）** | [Anthropic Pricing](https://www.anthropic.com/pricing#api) / [Claude Code costs](https://docs.anthropic.com/en/docs/claude-code/costs) | 官方以 API 计费 + 套餐限额为主，按模型 token 消耗计费 | 本次核验时模型代际已到 Claude 4.6 |
-| **OpenAI Codex（CLI/Cloud）** | [Codex Pricing](https://developers.openai.com/codex/pricing/) | Plus `$20/月`，Pro `$200/月`，Business `$30/用户/月`，或 API key token 计费 | 2026-02-07 再核验 |
-| **GLM Coding Plan** | [z.ai/coding-plan](https://www.z.ai/coding-plan) | 存在按月套餐，具体价格以官方页面实时展示为准 | 提供面向编码场景的订阅层 |
-| **MiniMax Claude Code 方案** | [MiniMax 文档](https://www.minimax.io/platform/document/claude-code) | 套餐/额度会调整，以官方文档实时显示为准 | 覆盖 Claude Code 兼容接入说明 |
-| **火山引擎 ModelArk Coding 方案** | [modelark 产品页](https://www.volcengine.com/product/modelark) | 官方活动/套餐信息有阶段性变动，以产品页实时显示为准 | 建议绑定方舟控制台核验最新权益 |
-| **Kimi / Moonshot（CLI + API）** | [kimi-cli docs](https://moonshotai.github.io/kimi-cli/en/) + [moonshot platform](https://platform.moonshot.cn/) | 当前以 API 计费为主；活动价/促销价见官方博客与控制台 | 本次核验时官方模型页显示已到 K2.5 |
+| **Claude Code（Anthropic 官方）** | [Anthropic Pricing](https://www.anthropic.com/pricing#api) / [Claude Code costs](https://docs.anthropic.com/en/docs/claude-code/costs) | 按 API token 消耗计费：平均 `¥43/开发者/天` 或 `¥720-1440/开发者/月`（Sonnet 4.5）。订阅计划：Pro `¥144/月`（年付`¥1440`），Max 基础版 `¥720/月`，Max 高级版 `¥1440/月` | 模型代际已到 Claude 4.6，无固定月费 Coding Plan |
+| **OpenAI Codex（CLI/Cloud）** | [Codex Pricing](https://developers.openai.com/codex/pricing/) | Plus `¥144/月`（`$20/月`），Pro `¥1440/月`（`$200/月`），Business `¥216/用户/月`（`$30/用户/月`），或 API key token 计费 | 2026-02-07 核验，包含在 ChatGPT 订阅计划中 |
+| **GLM Coding Plan** | [z.ai/coding-plan](https://www.z.ai/coding-plan) | Lite `¥20/月`（120 prompts/5h），Pro `¥30/月`（600 prompts/5h），Max `¥60/月`（2400 prompts/5h） | 智谱 AI 出品，支持 GLM-4.6，兼容 Claude Code/Cline 等工具 |
+| **阿里云百炼 Coding Plan** | [阿里云 Coding Plan](https://www.aliyun.com/benefit/scene/codingplan) | Lite `¥10/月`（首月）`¥40/月`（续费，18k 次/月），Pro `¥50/月`（首月）`¥200/月`（续费，90k 次/月） | 支持 Qwen3-Coder-Plus，兼容 Claude Code/Qwen Code/Cline 等工具 |
+| **MiniMax Claude Code 方案** | [MiniMax 文档](https://www.minimax.io/platform/document/claude-code) | Starter `¥10/月`（100 prompts/5h），Plus `¥20/月`（300 prompts/5h），Max `¥50/月`（1000 prompts/5h） | 覆盖 Claude Code 兼容接入说明，年付有折扣 |
+| **火山引擎 ModelArk Coding 方案** | [modelark 产品页](https://www.volcengine.com/product/modelark) / [方舟 Coding Plan](https://www.volcengine.com/activity/codingplan) | Lite `¥9.9/月`（首购，首月可低至`¥8.9`，1200 次/5h），Pro `¥49.9/月`（首购，6000 次/5h） | 支持 Doubao-Seed-Code、GLM-4.7、DeepSeek-V3.2、Kimi-K2-Thinking，兼容 Claude Code/Cursor/Cline 等工具 |
 
 ---
 
-## 🎓 初学者学习路径
-
-> **一周快速上手路线**：从零到发布你的第一个 AI 开发工具集成
-
-### 📅 7 天学习计划
-
-| Day | 任务 | 目标产出 |
-|:---:|:---|:---|
-| **Day 1** | 从 `Claude Code / Codex / Gemini CLI / Qwen Code` 中选 1 个 | 完成工具安装和首次配置 |
-| **Day 2** | 跑通"需求 -> 改代码 -> 本地测试 -> 提交" | 完成一次完整的开发循环 |
-| **Day 3** | 接 `Ollama` 或 `LiteLLM`，打通本地/多模型 | 实现多模型切换能力 |
-| **Day 4** | 接一个 MCP server（如文件系统/Git/浏览器类） | 扩展工具能力边界 |
-| **Day 5** | 在 IDE 里加 `Cline/Roo/Continue` 任一扩展 | 实现编辑器内集成 |
-| **Day 6** | 做一次失败复盘（问题、提示词、修复路径） | 形成问题解决经验 |
-| **Day 7** | 对外发布你的 `AGENTS.md + skills` 模板仓库 | 完成知识沉淀和分享 |
-
----
-
-## 🔧 Skills / MCP / 规则生态
-
-> **高相关生态项目**：扩展 AI 开发工具能力
-
-| Project | Link | 用途 | Stars |
-|:---|:---|:---|:---:|
-| **MCP Reference Servers** | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | 官方 MCP 参考实现（Filesystem/Git/Fetch 等） | 78.2k |
-| **Awesome Agent Skills** | [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | 社区 skills 聚合 | 6.3k |
-| **Antigravity Awesome Skills** | [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) | 大规模 skills 集合 | 7.7k |
-| **Agent Rules** | [steipete/agent-rules](https://github.com/steipete/agent-rules) | 多 agent 规则模板 | 5.6k |
-| **Figma Context MCP** | [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) | 设计到代码场景常用 MCP | 13.0k |
-
----
-
-## 📚 数据来源
-
-> **核验来源**：已核验来源见 `SOURCES.md`（包含官方仓库、官网文档、消歧参考链接）
-
-- 官方仓库：GitHub 官方组织下的项目
-- 官网文档：各厂商官方文档站点
-- 消歧参考：社区讨论和对比文章
-
----
-
-## 📝 贡献指南
-
-> **如何让这个仓库"更容易涨星"**
-
-- ✅ **保持"检索价值"**：每项都给官方入口和安装方式
-- ✅ **持续更新快照**：至少每周一次（新增工具、失效链接、安装变更）
-- ✅ **明确受众**：初学者、CLI 重度用户、IDE 用户分别给路径
-- ✅ **内容可复制**：命令可直接运行，含命名消歧与避坑
-
----
-
-## 📄 License
+## License
 
 MIT License
-
----
-
-<div align="center">
-
-**⭐ 如果这个仓库对你有帮助，请给个 Star！**
-
-[⬆ 回到顶部](#-ai-dev-navigator)
-
-</div>
