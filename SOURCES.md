@@ -56,10 +56,13 @@
 - https://docs.dify.ai/getting-started/install-self-hosted
 - https://www.modelscope.cn/
 - https://openai.com/api/pricing/
+- https://openai.com/index/introducing-gpt-5-3-codex/
 - https://help.openai.com/en/articles/9624314-model-release-notes
 - https://developers.openai.com/codex/pricing/
 - https://docs.anthropic.com/en/docs/about-claude/pricing
 - https://www.anthropic.com/news/claude-sonnet-4-5
+- https://www.anthropic.com/news/introducing-claude-opus-4-6
+- https://www.anthropic.com/newsroom
 - https://ai.google.dev/gemini-api/docs/pricing
 - https://ai.google.dev/gemini-api/docs/release-notes
 - https://docs.x.ai/docs/models
@@ -68,6 +71,7 @@
 - https://api-docs.deepseek.com/news/news250929
 - https://platform.moonshot.cn/blog/posts/k2-think
 - https://platform.moonshot.cn/blog/posts/kimi-k2-0905
+- https://www.kimi.com/model
 - https://docs.z.ai/guides/models/pricing
 - https://z.ai/blog/glm-4.7
 - https://www.z.ai/coding-plan
@@ -76,6 +80,7 @@
 - https://www.minimax.io/platform/document/claude-code
 - https://platform.stepfun.com/docs/pricing/details
 - https://platform.stepfun.com/docs/intro/step3
+- https://platform.stepfun.com/docs/intro/step3.5
 - https://qwenlm.github.io/blog/qwen3-next/
 - https://qwenlm.github.io/blog/qwen3-coder/
 - https://help.aliyun.com/zh/model-studio/billing-of-model-studio
