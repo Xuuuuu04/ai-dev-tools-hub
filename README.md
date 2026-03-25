@@ -181,14 +181,15 @@
 | `2023-12` | Google | Gemini 1.0 Ultra / Pro / Nano | Gemini 1.0 首发 | [blog.google](https://blog.google/innovation-and-ai/technology/ai/google-gemini-ai/) |
 | `2024-02` | Google | Gemini 1.5 Pro | Gemini 1.5 首发版本 | [blog.google](https://blog.google/innovation-and-ai/products/google-gemini-next-generation-model-february-2024/) |
 | `2024-02` | Qwen | Qwen1.5 | Qwen1.5 基础系列 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen1.5/) |
-| `2024-03` | Anthropic | Claude 3 Opus / Sonnet / Haiku | Claude 3 家族发布 | [anthropic.com](https://www.anthropic.com/news/claude-3-family) |
-| `2024-03` | xAI | Grok-1.5 | Grok-1.5 发布 | [x.ai](https://x.ai/news/grok-1.5) |
+| `2024-03-04` | Anthropic | Claude 3 Opus / Sonnet / Haiku | Claude 3 家族发布，200K 上下文，支持视觉能力 | [anthropic.com](https://www.anthropic.com/news/claude-3-family) |
+| `2024-03` | xAI | Grok-1 开源 | 314B 参数 MoE 模型，Apache 2.0 开源 | [x.ai](https://x.ai/news/grok-os) |
+| `2024-03` | xAI | Grok-1.5 | Grok-1.5 发布，改进推理和工具使用 | [x.ai](https://x.ai/news/grok-1-5) |
 | `2024-04` | Qwen | CodeQwen1.5 | Qwen 首个代码专门版本 | [qwenlm.github.io](https://qwenlm.github.io/blog/codeqwen1.5/) |
 | `2024-05` | OpenAI | GPT-4o | 新一代原生多模态旗舰 | [openai.com](https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/) |
 | `2024-05` | Google | Gemini 1.5 Pro（1M 上下文） | 面向开发者和 Gemini Advanced 扩展 | [blog.google](https://blog.google/products/gemini/google-gemini-update-may-2024/) |
 | `2024-05` | DeepSeek | DeepSeek-V2 | DeepSeek V2 代公开上线 | [api-docs.deepseek.com](https://api-docs.deepseek.com/updates/) |
 | `2024-06` | Qwen | Qwen2 | Qwen2 系列发布 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen2/) |
-| `2024-06` | Anthropic | Claude 3.5 Sonnet | Claude 3.5 系列首发 | [anthropic.com](https://www.anthropic.com/news/claude-3-5-sonnet) |
+| `2024-06-20` | Anthropic | Claude 3.5 Sonnet | 性能超越 Claude 3 Opus，出色的视觉和代码能力 | [anthropic.com](https://www.anthropic.com/news/claude-3-5-sonnet) |
 | `2024-07` | OpenAI | GPT-4o mini | 轻量多模态模型发布 | [help.openai.com](https://help.openai.com/en/articles/9624314-model-release-notes) |
 | `2024-07` | DeepSeek | DeepSeek-Coder-V2 | 代码模型 V2 代 | [api-docs.deepseek.com](https://api-docs.deepseek.com/updates/) |
 | `2024-08` | xAI | Grok-2 / Grok-2 mini | Grok-2 代在 8 月上线，12 月再做官方大版本升级 | [x.ai](https://x.ai/news/grok-1212/) |
@@ -204,7 +205,7 @@
 | `2025-01` | DeepSeek | DeepSeek-R1 | R1 推理模型正式发布 | [api-docs.deepseek.com](https://api-docs.deepseek.com/news/news250120) |
 | `2025-01` | Qwen | Qwen2.5-Max | 大规模 MoE 商业旗舰 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen2.5-max/) |
 | `2025-02` | OpenAI | GPT-4.5 | GPT-4.5 发布 | [openai.com](https://openai.com/index/introducing-gpt-4-5/) |
-| `2025-02` | Anthropic | Claude 3.7 Sonnet | 3.7 Sonnet 发布 | [anthropic.com](https://www.anthropic.com/news/claude-3-7-sonnet) |
+| `2025-02-24` | Anthropic | Claude 3.7 Sonnet | 首个混合推理模型，可见扩展思维，SWE-bench 63.7-70.3% | [anthropic.com](https://www.anthropic.com/news/claude-3-7-sonnet) |
 | `2025-02` | xAI | Grok 3 / Grok 3 mini | Grok 3 Beta 发布 | [x.ai](https://x.ai/blog/grok-3) |
 | `2025-03` | Google | Gemini 2.5 Pro | 2.5 Pro 首发；截至 2026-03 仍是官方稳定旗舰 | [blog.google](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/) |
 | `2025-03` | DeepSeek | DeepSeek-V3-0324 | V3 小版本升级 | [api-docs.deepseek.com](https://api-docs.deepseek.com/zh-cn/news/news250325) |
@@ -216,35 +217,46 @@
 | `2025-04` | 百度 | 文心 4.5 Turbo / X1 Turbo | 百度 Create 2025 发布 Turbo 双模型 | [cloud.baidu.com](https://cloud.baidu.com/news/news_01bea4b7-a6b4-432d-a8cb-647c288c7fda) |
 | `2025-05` | Google | Gemini 2.5 Pro Preview（I/O Edition） | 2.5 Pro 编码增强版预览 | [blog.google](https://blog.google/products/gemini/gemini-2-5-pro-updates) |
 | `2025-05` | DeepSeek | DeepSeek-R1-0528 | R1 小版本升级 | [api-docs.deepseek.com](https://api-docs.deepseek.com/zh-cn/news/news250528) |
-| `2025-05` | Anthropic | Claude Opus 4 / Sonnet 4 | Claude 4 家族发布 | [anthropic.com](https://www.anthropic.com/news/claude-4) |
+| `2025-05-22` | Anthropic | Claude Opus 4 / Sonnet 4 | Claude 4 家族发布，支持扩展思维和工具使用，1M 上下文测试版 | [anthropic.com](https://www.anthropic.com/news/claude-4) |
 | `2025-06` | OpenAI | o3-pro | o3-pro 进入 API / ChatGPT Pro | [help.openai.com](https://help.openai.com/en/articles/9624314-model-release-notes) |
 | `2025-07` | xAI | Grok 4 | Grok 4 发布 | [x.ai](https://x.ai/news/grok-4) |
 | `2025-07` | Qwen | Qwen3-Coder-480B-A35B-Instruct | Qwen3-Coder 首发旗舰 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen3-coder/) |
 | `2025-07` | StepFun | Step-3 | Step-3 发布 | [github.com](https://github.com/stepfun-ai/Step3) |
-| `2025-08` | xAI | Grok Code Fast 1 | 专用代码模型 | [x.ai](https://x.ai/blog) |
+| `2025-08` | xAI | Grok Code Fast 1 | 专用代码模型，支持 TypeScript、Python、Java、Rust、C++、Go | [x.ai](https://x.ai/news/grok-code-fast-1) |
 | `2025-08` | DeepSeek | DeepSeek-V3.1 | 混合 Think / Non-Think 架构 | [api-docs.deepseek.com](https://api-docs.deepseek.com/news/news250821) |
-| `2025-09` | xAI | Grok 4 Fast | 成本优化版 Grok 4 | [x.ai](https://x.ai/blog) |
+| `2025-09` | ByteDance | Doubao-seed-translation | 多语言翻译模型，28 种语言互译，4K 上下文 | [volcengine.com](https://console.volcengine.com/ark) |
+| `2025-09` | xAI | Grok 4 Fast | 成本优化版 Grok 4，200 万 token 上下文 | [x.ai](https://x.ai/blog) |
 | `2025-09` | DeepSeek | DeepSeek-V3.1-Terminus / V3.2-Exp | 3.1 终版与 3.2 实验版 | [api-docs.deepseek.com](https://api-docs.deepseek.com/updates/) |
-| `2025-10` | Anthropic | Claude Sonnet 4.5 / Haiku 4.5 | Claude 4.5 系列更新 | [anthropic.com](https://www.anthropic.com/news) |
-| `2025-11` | xAI | Grok 4.1 | Grok 4.1 上线消费者端 | [x.ai](https://x.ai/news/grok-4-1/) |
-| `2025-11` | xAI | Grok 4.1 Fast | Agent tools + 2M context | [x.ai](https://x.ai/news/grok-4-1-fast/) |
+| `2025-09-29` | Anthropic | Claude Sonnet 4.5 | 最佳编码模型，SWE-bench Verified 领先，计算机使用能力 61.4% | [anthropic.com](https://www.anthropic.com/news/claude-sonnet-4-5) |
+| `2025-10-15` | Anthropic | Claude Haiku 4.5 | 小型高效模型，达到 Sonnet 4 编码水平，成本仅 1/3 | [anthropic.com](https://www.anthropic.com/news/claude-haiku-4-5) |
+| `2025-11` | xAI | Grok 4.1 | 改进的推理、多模态理解、200 万 token 上下文 | [x.ai](https://x.ai/news/grok-4-1/) |
+| `2025-11` | xAI | Grok 4.1 Fast | 最佳工具调用模型，Agent Tools API 支持、实时 X 数据、Web 搜索 | [x.ai](https://x.ai/news/grok-4-1-fast/) |
+| `2025-11-24` | Anthropic | Claude Opus 4.5 | 最强编码模型，SWE-bench 82.9%，支持长运行任务 | [anthropic.com](https://www.anthropic.com/news/claude-opus-4-5) |
 | `2025-11` | Google | Gemini 3 Pro Preview / Gemini 3 Deep Think | Gemini 3 时代开启 | [blog.google](https://blog.google/products/gemini/gemini-3) |
 | `2025-12` | Google | Gemini 3 Flash Preview | Gemini 3 Flash 发布 | [blog.google](https://blog.google/products/gemini/gemini-3-flash/) |
 | `2025-12` | DeepSeek | DeepSeek-V3.2 | V3.2 正式版 | [api-docs.deepseek.com](https://api-docs.deepseek.com/updates/) |
-| `2025-12` | Zhipu | GLM-4.7 | GLM-4.7 发布 | [docs.z.ai](https://docs.z.ai/release-notes/new-released) |
+| `2025-12` | Zhipu | GLM-4.7 | 400B 参数，代码生成能力相比 4.5 提升 27%，支持 200K 上下文 | [docs.z.ai](https://docs.z.ai/release-notes/new-released) |
 | `2025-12` | MiniMax | MiniMax-M2.1 | M2.1 发布 | [minimax.io](https://www.minimax.io/news/minimax-m21) |
-| `2025-12` | 火山方舟 / 豆包 | Doubao-Seed-Code | 代码模型公开上线 | [console.volcengine.com](https://console.volcengine.com/ark) |
-| `2025-12` | 腾讯混元 | HY2.0 Think / HY2.0 Instruct | 腾讯混元 2.0 系列 | [cloud.tencent.com](https://cloud.tencent.com/document/product/1729) |
-| `2026-01` | 百度 | ERNIE 5.0 | 文心 5.0 正式版上线千帆 | [cloud.baidu.com](https://cloud.baidu.com/news/news_eacd5e1a-b6ad-4874-b920-15390d26e656) |
-| `2026-01` | Moonshot | Kimi K2.5 | K2.5 发布 | [kimi.com](https://www.kimi.com/blog/kimi-k2-5) |
+| `2025-12` | ByteDance | Doubao-pro-1215 | 12 月升级版，综合能力较 5 月提升 32%，对齐 GPT-4o | [volcengine.com](https://console.volcengine.com/ark) |
+| `2025-12` | ByteDance | Doubao-vision-pro-32k | 强大视觉内容识别，能力全面对齐 GPT-4o | [volcengine.com](https://console.volcengine.com/ark) |
+| `2025-12` | ByteDance | Doubao-Seed-Code | 代码模型公开上线 | [console.volcengine.com](https://console.volcengine.com/ark) |
+| `2025-12` | Tencent | HY2.0 Think / HY2.0 Instruct | 腾讯混元 2.0 系列，长思维推理模型 | [cloud.tencent.com](https://cloud.tencent.com/document/product/1729) |
+| `2025-12-22` | Zhipu | GLM-4.7-Flash | 轻量级部署模型，30B-A3B MoE 架构 | [docs.z.ai](https://docs.z.ai/release-notes/new-released) |
+| `2026-01-22` | Baidu | ERNIE 5.0 | 文心 5.0 正式版，2.4 万亿参数，原生全模态统一建模 | [cloud.baidu.com](https://cloud.baidu.com/news/news_eacd5e1a-b6ad-4874-b920-15390d26e656) |
+| `2026-01-27` | Moonshot | Kimi K2.5 | 原生多模态，256K 上下文，Agent 群体技术支持 100 个并行子代理 | [kimi.com](https://www.kimi.com/blog/kimi-k2-5) |
 | `2026-01` | Qwen | qwen3-max-2026-01-23 | 商业 Max 版更新 | [help.aliyun.com](https://help.aliyun.com/) |
-| `2026-01` | LongCat | LongCat-Flash-Thinking-2601 | Thinking 版上线 | [github.com](https://github.com/meituan-longcat) |
-| `2026-02` | OpenAI | GPT-5.3-Codex | Codex 专用代际 | [openai.com](https://openai.com/index/introducing-gpt-5-3-codex) |
-| `2026-02` | Anthropic | Claude Opus 4.6 / Sonnet 4.6 | 4.6 系列更新 | [anthropic.com](https://www.anthropic.com/news) |
-| `2026-02` | Qwen | qwen3-coder-next / qwen3.5-plus | Qwen 商业线继续迭代 | [qwenlm.github.io](https://qwenlm.github.io/zh/blog/qwen3-coder/) |
-| `2026-02` | Zhipu | GLM-5 / GLM-5-Code | GLM-5 代发布 | [docs.z.ai](https://docs.z.ai/release-notes/new-released) |
-| `2026-02` | MiniMax | MiniMax-M2.5 / M2.5-highspeed | M2.5 系列发布 | [minimax.io](https://www.minimax.io/news/minimax-m25) |
-| `2026-02` | StepFun | Step-3.5-Flash | Step-3.5-Flash 发布 | [stepfun.com](https://platform.stepfun.com/) |
+| `2026-01-16` | MeiTuan | LongCat-Flash-Thinking-2601 | Thinking 版上线，首次实现测试时计算 scaling | [github.com](https://github.com/meituan-longcat) |
+| `2026-02-02` | StepFun | Step-3.5-Flash | 196B MoE，11B 激活参数，256K 上下文，Apache 2.0 开源 | [stepfun.com](https://platform.stepfun.com/) |
+| `2026-02-05` | OpenAI | GPT-5.3-Codex | Codex 专用代际，代码能力强化版 | [openai.com](https://openai.com/index/introducing-gpt-5-3-codex) |
+| `2026-02-11` | Zhipu | GLM-5 | 745B 参数，MoE 架构，44B 激活参数，MIT 开源许可 | [docs.z.ai](https://docs.z.ai/release-notes/new-released) |
+| `2026-02-14` | ByteDance | Doubao-seed-2.0 系列 | 豆包大模型 2.0（Pro/Lite/Mini/Code），面向 Agent 时代，256K 上下文 | [volcengine.com](https://console.volcengine.com/ark) |
+| `2026-02-14` | ByteDance | Seedance-2.0 | 豆包视频生成模型 2.0，音视图文均可参考 | [volcengine.com](https://console.volcengine.com/ark) |
+| `2026-02-14` | ByteDance | Seedream-5.0-Lite | 豆包图像创作模型 5.0 轻量版，首次搭载联网检索功能 | [volcengine.com](https://console.volcengine.com/ark) |
+| `2026-02-15` | Qwen | qwen3-coder-next / qwen3.5-plus | Qwen 商业线继续迭代 | [qwenlm.github.io](https://qwenlm.github.io/zh/blog/qwen3-coder/) |
+| `2026-02-05` | Anthropic | Claude Opus 4.6 | 业界领先智能体编码，Terminal-Bench 2.0 和 Humanity's Last Exam 领先 | [anthropic.com](https://www.anthropic.com/news/claude-opus-4-6) |
+| `2026-02-17` | Anthropic | Claude Sonnet 4.6 | 编码、智能体、计算机使用全面升级，1M token 上下文（测试版） | [anthropic.com](https://www.anthropic.com/news/claude-sonnet-4-6) |
+| `2026-02-17` | xAI | Grok-4.20 Beta | 行业领先速度和智能体工具调用能力，200 万 token 上下文 | [x.ai](https://x.ai/news/grok-4-20) |
+| `2026-02-24` | Qwen | Qwen3.5-122B-A10B / 35B-A3B | 扩展的 Qwen3.5 系列，1M 上下文 | [qwenlm.github.io](https://qwenlm.github.io/zh/blog/qwen3/) |
 | `2026-03` | OpenAI | GPT-5.4 / GPT-5.4 Pro | GPT-5.4 正式进入 API 与 Codex | [openai.com](https://openai.com/index/introducing-gpt-5-4) |
 
 ### 分散发布厂商补充清单（截至 2026-03-25）
@@ -253,12 +265,12 @@
 
 | 厂商 | 官方公开型号 / 版本 | 可核验信息 | 官方入口 |
 |:---|:---|:---|:---|
-| **Moonshot (Kimi)** | `moonshot-v1-8k` / `moonshot-v1-32k` / `moonshot-v1-128k` / `kimi-latest` / `kimi-thinking-preview` / `Kimi K2.5` | 公开博客与平台文档可核验到的主要 API / 产品代际 | [platform.moonshot.cn](https://platform.moonshot.cn/) |
-| **Zhipu / GLM** | `GLM-4-Flash` / `GLM-4-Long` / `GLM-4-Plus` / `GLM-4.5` / `GLM-4.5-Air` / `GLM-4.5-AirX` / `GLM-4.6` / `GLM-4.6V` / `GLM-4.7` / `GLM-4.7-Flash` / `GLM-5` / `GLM-5-Code` | 智谱开放平台当前公开命名文本主模型 | [docs.z.ai](https://docs.z.ai/guides/overview/pricing) |
+| **Moonshot (Kimi)** | `moonshot-v1-8k` / `moonshot-v1-32k` / `moonshot-v1-128k` / `kimi-k1.5` / `kimi-k2` / `kimi-k2-thinking` / `kimi-k2.5` | 官方支持版本：K1(2024-11)→K1.5(2025-01)→K2(2025-07)→K2 Thinking(2025-11)→K2.5(2026-01)，256K 上下文，Agent 技术 | [platform.moonshot.cn](https://platform.moonshot.cn/) |
+| **Zhipu / GLM** | `ChatGLM-3` / `GLM-4` / `GLM-4-9B` / `GLM-4.5` / `GLM-4.5-Air` / `GLM-4.6` / `GLM-4.6V` / `GLM-4.7` / `GLM-4.7-Flash` / `GLM-5` / `GLM-5-Code` | 官方版本序：ChatGLM-3(2023-10)→GLM-4(2024-01)→4.5(2025-07)→4.6(2025-09)→4.7(2025-12)→5代(2026-02)，MIT 开源许可，最新 GLM-5 共 745B 参数 | [docs.z.ai](https://docs.z.ai/guides/overview/pricing) |
 | **MiniMax** | `MiniMax-M1` / `MiniMax-M2` / `MiniMax-M2.1` / `MiniMax-M2.5` / `MiniMax-M2.5-highspeed` | 官方新闻和平台文档可核验的主文本模型代际 | [platform.minimax.io](https://platform.minimax.io/) |
-| **StepFun** | `Step-1` / `Step-1V` / `Step-1.5V` / `Step-2` / `Step-2-16K` / `Step-2-mini` / `Step-3` / `Step-3.5-Flash` | 官方平台与公开仓库可核验的主要大模型版本 | [platform.stepfun.com](https://platform.stepfun.com/) |
-| **百度文心** | `ERNIE 4.0 Turbo` / `ERNIE 4.5` / `ERNIE X1` / `ERNIE 4.5 Turbo` / `ERNIE X1 Turbo` / `ERNIE 5.0` | 公开新闻稿与千帆平台对外可见版本 | [console.bce.baidu.com](https://console.bce.baidu.com/qianfan/overview) |
-| **豆包 / 火山方舟** | `Doubao-pro-32k` / `Doubao-pro-128k` / `Doubao-lite-32k` / `Doubao-1.5-pro` / `Doubao-1.5-thinking-pro` / `Doubao-Seed-1.6` / `Doubao-Seed-Code` | 方舟平台公开命名的代表型号 | [console.volcengine.com](https://console.volcengine.com/ark) |
+| **StepFun** | `Step-1` / `Step-1V` / `Step-1.5V` / `Step-1X` / `Step-2` / `Step-3` / `Step-3.5-Flash` / `Step-Audio-R1` | 官方版本序：Step-1(2024-03)→2(2024-07)→3(2025-07)→3.5-Flash(2026-02)，包括视频生成(Seedance)和音频推理(Step-Audio-R1)模型族 | [platform.stepfun.com](https://platform.stepfun.com/) |
+| **百度文心** | `ERNIE 3.5` / `ERNIE 4.0` / `ERNIE 4.5` / `ERNIE X1` / `ERNIE 5.0` | 官方版本序：ERNIE 3.5(2023-06)→4.0(2023-10)→4.5(2025-03)→X1推理(2025-03)→5.0全模态(2026-01)，支持 128K-256K 上下文，开源 10 款模型 | [console.bce.baidu.com](https://console.bce.baidu.com/qianfan/overview) |
+| **ByteDance 豆包** | `Doubao-pro` / `Doubao-1.5-pro` / `Doubao-1.5-thinking-pro` / `Doubao-seed-1.6` / `Doubao-seed-2.0` | 官方版本序：Doubao-pro(2024-05)→1.5-pro(2025-01)→seed-1.6(2024-10)→seed-2.0系列(2026-02)，支持 256K 上下文，代码/视频/图像/翻译专项模型，MoE 架构 | [console.volcengine.com](https://console.volcengine.com/ark) |
 | **腾讯混元** | `hunyuan-standard` / `hunyuan-pro` / `hunyuan-lite` / `hunyuan-turbos` / `HY2.0-Think` / `HY2.0-Instruct` | 腾讯云文档与控制台公开可见型号 | [cloud.tencent.com](https://cloud.tencent.com/document/product/1729) |
 | **LongCat（美团）** | `LongCat-Flash-Chat` / `LongCat-Flash-Thinking-2601` | 当前公开仓库可核验的主模型版本 | [github.com](https://github.com/meituan-longcat) |
 | **MiMo（小米）** | `MiMo-7B-Base` / `MiMo-7B-SFT` / `MiMo-7B-RL` / `MiMo-V2-Flash` | 以公开权重与官网可见命名版本为准 | [huggingface.co](https://huggingface.co/XiaomiMiMo) |
