@@ -5,7 +5,7 @@
 **一个面向初学者与进阶开发者的 AI 开发工具信息集成仓库**
 
 [![Status](https://img.shields.io/badge/Status-Active-success)](https://github.com)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--02--07-blue)](https://github.com)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--03--25-blue)](https://github.com)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 ---
@@ -16,26 +16,26 @@
 <tr>
 <td align="center" width="180">
 <a href="https://platform.openai.com/">
-<img src="https://img.shields.io/badge/OpenAI-GPT--5.3--Codex-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI" /><br/>
-<sub><code>2026-02-05</code></sub>
+<img src="https://img.shields.io/badge/OpenAI-GPT--5.4-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI" /><br/>
+<sub><code>2026-03-05</code></sub>
 </a>
 </td>
 <td align="center" width="180">
 <a href="https://console.anthropic.com/">
-<img src="https://img.shields.io/badge/Anthropic-Claude%20Opus%204.6-FF6B35?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic" /><br/>
-<sub><code>2026-02-05</code></sub>
+<img src="https://img.shields.io/badge/Anthropic-Claude%20Sonnet%204.6-FF6B35?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic" /><br/>
+<sub><code>2026-02-17</code></sub>
 </a>
 </td>
 <td align="center" width="180">
 <a href="https://aistudio.google.com/">
-<img src="https://img.shields.io/badge/Google-Gemini%203%20Pro-4285F4?style=flat-square&logo=google&logoColor=white" alt="Google" /><br/>
-<sub><code>2025-11-18</code></sub>
+<img src="https://img.shields.io/badge/Google-Gemini%203%20Flash-4285F4?style=flat-square&logo=google&logoColor=white" alt="Google" /><br/>
+<sub><code>2025-12-17</code></sub>
 </a>
 </td>
 <td align="center" width="180">
 <a href="https://console.x.ai/">
 <img src="https://img.shields.io/badge/xAI-Grok%204.1%20Fast-000000?style=flat-square&logo=x&logoColor=white" alt="xAI" /><br/>
-<sub><code>2025-11-17</code></sub>
+<sub><code>2025-11-19</code></sub>
 </a>
 </td>
 </tr>
@@ -54,8 +54,8 @@
 </td>
 <td align="center" width="180">
 <a href="https://open.bigmodel.cn/">
-<img src="https://img.shields.io/badge/Zhipu-GLM--4.7-00A8FF?style=flat-square" alt="Zhipu" /><br/>
-<sub><code>2025-12-22</code></sub>
+<img src="https://img.shields.io/badge/Zhipu-GLM--5-00A8FF?style=flat-square" alt="Zhipu" /><br/>
+<sub><code>2026-02-12</code></sub>
 </a>
 </td>
 <td align="center" width="180">
@@ -68,8 +68,8 @@
 <tr>
 <td align="center" width="180">
 <a href="https://console.bce.baidu.com/qianfan/">
-<img src="https://img.shields.io/badge/百度-ERNIE%205.0--0110-2932E1?style=flat-square&logo=baidu&logoColor=white" alt="百度" /><br/>
-<sub><code>2026-01-15</code></sub>
+<img src="https://img.shields.io/badge/百度-ERNIE%205.0-2932E1?style=flat-square&logo=baidu&logoColor=white" alt="百度" /><br/>
+<sub><code>2026-01-22</code></sub>
 </a>
 </td>
 <td align="center" width="180">
@@ -128,65 +128,66 @@
 
 ## 1. 前沿模型厂商情报
 
-> **价格单位**：人民币（¥）/ 百万 tokens | **汇率参考**：$1 ≈ ¥7.2（2026-02-07）
+> **价格单位**：人民币（¥）/ 百万 tokens | **汇率参考**：$1 ≈ ¥6.86（2026-03-25）  
+> **校对口径**：仅采用厂商官方新闻稿、官方模型文档、官方定价页与官方控制台信息。若官方未公开某项价格，则明确标注“未公布”或“以控制台为准”。
 
-| 厂商 | 最新模型 | 发布时间 | 输入（¥/百万tokens） | 输出（¥/百万tokens） | 缓存（¥/百万tokens） | 开发者 Console | 体验入口 |
+| 厂商 | 当前主力模型 | 发布时间 | 输入（¥/百万tokens） | 输出（¥/百万tokens） | 缓存（¥/百万tokens） | 开发者 Console | 体验入口 |
 |:---|:---|:---|:---:|:---:|:---:|:---|:---|
-| **OpenAI** | GPT-5.3-Codex | `2026-02-05` | `12.6` | `100.8` | `1.26` | [platform.openai.com](https://platform.openai.com/) | [chatgpt.com](https://chatgpt.com/) |
-| **OpenAI** | GPT-5.2 Pro | `2025-12-10` | `151.2` | `1209.6` | 不支持缓存 | [platform.openai.com](https://platform.openai.com/) | [chatgpt.com](https://chatgpt.com/) |
-| **Anthropic** | Claude Opus 4.6 | `2026-02-05` | `36` | `180` | `3.6`（读）`45`（写） | [console.anthropic.com](https://console.anthropic.com/) | [claude.ai](https://claude.ai/) |
-| **Anthropic** | Claude Sonnet 4.5 | `2025-10-01` | `21.6` | `108` | `2.16`（读）`27`（写） | [console.anthropic.com](https://console.anthropic.com/) | [claude.ai](https://claude.ai/) |
-| **Anthropic** | Claude Haiku 4.5 | `2025-10-15` | `7.2` | `36` | `0.72`（读）`9`（写） | [console.anthropic.com](https://console.anthropic.com/) | [claude.ai](https://claude.ai/) |
-| **Google** | Gemini 3 Pro（≤200k） | `2025-11-18` | `14.4` | `86.4` | `1.44`（≤200k）`2.88`（>200k）存储`32.4`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
-| **Google** | Gemini 3 Pro（>200k） | `2025-11-18` | `28.8` | `129.6` | `2.88` 存储`32.4`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
-| **Google** | Gemini 3 Flash | `2025-12-17` | `3.6` | `21.6` | `0.36` 存储`32.4`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
-| **xAI** | Grok 4.1 Fast | `2025-11-17` | `1.44` | `3.6` | `0.36` | [console.x.ai](https://console.x.ai/) | [grok.com](https://grok.com/) |
-| **xAI** | Grok 4 | `2025-07-09` | `21.6` | `108` | `5.4` | [console.x.ai](https://console.x.ai/) | [grok.com](https://grok.com/) |
-| **DeepSeek** | DeepSeek-V3.2 | `2025-12-01` | `1.94` | `7.92` | `0.50` | [platform.deepseek.com](https://platform.deepseek.com/) | [chat.deepseek.com](https://chat.deepseek.com/) |
-| **Moonshot (Kimi)** | Kimi K2.5 | `2026-01-27` | `3.24-4.32` | `18-21.6` | `0.72-1.08` | [platform.moonshot.cn](https://platform.moonshot.cn/) | [kimi.com](https://www.kimi.com/) |
-| **Zhipu / GLM** | GLM-4.7 | `2025-12-22` | `2.88` | `10.8` | `0.41`（读）`0.41-0.79`（写） | [open.bigmodel.cn](https://open.bigmodel.cn/) | [chat.z.ai](https://chat.z.ai/) |
-| **MiniMax** | MiniMax-M2.1 | `2025-12-23` | `2.16` | `8.64` | `0.22`（读）`2.7`（写） | [platform.minimax.io](https://platform.minimax.io/) | [chat.minimax.io](https://chat.minimax.io/) |
-| **StepFun** | Step-3.5-Flash | `2026-02` | `0.70`（未命中）`0.14`（命中） | `2.10` | `0.14`（命中时按20%计费） | [platform.stepfun.com](https://platform.stepfun.com/) | [stepfun.com](https://stepfun.com/) |
-| **StepFun** | Step3 | `2025-07-31` | `1.5-4`（未命中）`0.3-0.8`（命中） | `4-10` | `0.3-0.8`（命中时按20%计费，视上下文长度） | [platform.stepfun.com](https://platform.stepfun.com/) | [stepfun.com](https://stepfun.com/) |
-| **Qwen** | Qwen3 Max | `2025-09-23` | `8.64` | `43.2` | `1.73`（读） | [bailian.console.aliyun.com](https://bailian.console.aliyun.com/) | [chat.qwen.ai](https://chat.qwen.ai/) |
-| **Qwen** | Qwen3 Coder Plus | `2025-09-23` | `7.2` | `36` | `0.72` | [bailian.console.aliyun.com](https://bailian.console.aliyun.com/) | [chat.qwen.ai](https://chat.qwen.ai/) |
-| **Qwen** | Qwen3-Coder-Next | `2026-02-03` | 本地部署模型，无官方API | 本地部署模型，无官方API | `-` | [bailian.console.aliyun.com](https://bailian.console.aliyun.com/) | [chat.qwen.ai](https://chat.qwen.ai/) |
-| **Qwen** | Qwen3 Coder 480B | `2025-07-23` | `1.58` | `6.84` | 不支持缓存 | [bailian.console.aliyun.com](https://bailian.console.aliyun.com/) | [chat.qwen.ai](https://chat.qwen.ai/) |
-| **文心（百度千帆）** | ERNIE-5.0-0110 | `2026-01-15` | `4` | `16` | 缓存价格待官方公布 | [console.bce.baidu.com/qianfan](https://console.bce.baidu.com/qianfan/overview) | [yiyan.baidu.com](https://yiyan.baidu.com/) |
-| **豆包 / 火山方舟** | Doubao-Seed-Code | `2025-12-03` | `1.22`（≤32k） | `8.06` | `0.24`（读） | [console.volcengine.com/ark](https://console.volcengine.com/ark) | [doubao.com](https://www.doubao.com/) |
-| **腾讯混元** | HY 2.0 Think / Instruct | `2025-12-05` | `4` | `16` | 缓存价格待官方公布 | [console.cloud.tencent.com/hunyuan](https://console.cloud.tencent.com/hunyuan) | [yuanbao.tencent.com](https://yuanbao.tencent.com/) |
-| **LongCat（美团）** | LongCat-Flash-Thinking-2601 | `2026-01-16` | `1.44` | `5.76` | 缓存价格待官方公布 | [longcat.ai](https://longcat.ai/) | [longcat.ai](https://longcat.ai/) |
-| **LongCat（美团）** | LongCat-Flash-Chat | `2025-09-09` | `1.44` | `5.76` | 缓存价格待官方公布 | [longcat.ai](https://longcat.ai/) | [longcat.ai](https://longcat.ai/) |
-| **MiMo（小米）** | MiMo-V2-Flash | `2025-12-14` | `0.65` | `2.09` | `0.14`（读） | [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo) | [mimo.xiaomi.com](https://mimo.xiaomi.com/) |
+| **OpenAI** | GPT-5.4 | `2026-03-05` | `17.15` | `102.90` | `1.72` | [platform.openai.com](https://platform.openai.com/) | [chatgpt.com](https://chatgpt.com/) |
+| **OpenAI** | GPT-5.4 Pro | `2026-03-05` | `205.80` | `1234.80` | 不支持缓存 | [platform.openai.com](https://platform.openai.com/) | [chatgpt.com](https://chatgpt.com/) |
+| **OpenAI** | GPT-5.3-Codex | `2026-02-05` | `8.58` | `68.60` | `0.86` | [platform.openai.com](https://platform.openai.com/) | [chatgpt.com](https://chatgpt.com/) |
+| **Anthropic** | Claude Sonnet 4.6 | `2026-02-17` | `20.58` | `102.90` | 支持 Prompt Caching，4.6 公页未单列读写价 | [console.anthropic.com](https://console.anthropic.com/) | [claude.ai](https://claude.ai/) |
+| **Anthropic** | Claude Opus 4.6 | `2026-02-05` | `34.30` | `171.50` | 支持 Prompt Caching，4.6 公页未单列读写价 | [console.anthropic.com](https://console.anthropic.com/) | [claude.ai](https://claude.ai/) |
+| **Anthropic** | Claude Haiku 4.5 | `2025-10-15` | `6.86` | `34.30` | 支持 Prompt Caching，最高可节省约 90% | [console.anthropic.com](https://console.anthropic.com/) | [claude.ai](https://claude.ai/) |
+| **Google** | Gemini 3 Pro（≤200K） | `2025-11-18` | `13.72` | `82.32` | `1.37`，存储 `6.86`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
+| **Google** | Gemini 3 Pro（>200K） | `2025-11-18` | `27.44` | `123.48` | `2.74`，存储 `6.86`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
+| **Google** | Gemini 3 Flash | `2025-12-17` | `3.43` | `20.58` | `0.34`，存储 `6.86`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
+| **xAI** | Grok 4.1 Fast | `2025-11-19` | `1.37` | `3.43` | `0.34` | [console.x.ai](https://console.x.ai/) | [grok.com](https://grok.com/) |
+| **xAI** | Grok 4.1 | `2025-11-17` | 以官方模型页为准 | 以官方模型页为准 | 以官方模型页为准 | [console.x.ai](https://console.x.ai/) | [grok.com](https://grok.com/) |
+| **xAI** | Grok 4 | `2025-07-09` | 以官方模型页为准 | 以官方模型页为准 | 以官方模型页为准 | [console.x.ai](https://console.x.ai/) | [grok.com](https://grok.com/) |
+| **DeepSeek** | deepseek-chat（V3.2） | `2025-12-01` | `2.00`（未命中） | `3.00` | `0.20`（命中） | [platform.deepseek.com](https://platform.deepseek.com/) | [chat.deepseek.com](https://chat.deepseek.com/) |
+| **DeepSeek** | deepseek-reasoner（V3.2） | `2025-12-01` | `4.00`（未命中） | `16.00` | `1.00`（命中） | [platform.deepseek.com](https://platform.deepseek.com/) | [chat.deepseek.com](https://chat.deepseek.com/) |
+| **Moonshot (Kimi)** | Kimi K2.5 | `2026-01-27` | 公开页未统一披露 | 公开页未统一披露 | 支持缓存，具体以控制台为准 | [platform.moonshot.cn](https://platform.moonshot.cn/) | [kimi.com](https://www.kimi.com/) |
+| **Moonshot (Kimi)** | Kimi K2 Think / Turbo | `2026-01` | 公开页未统一披露 | 公开页未统一披露 | 以控制台为准 | [platform.moonshot.cn](https://platform.moonshot.cn/) | [kimi.com](https://www.kimi.com/) |
+| **Zhipu / GLM** | GLM-5 | `2026-02-12` | `6.86` | `21.95` | `1.37`（读）存储限时免费 | [open.bigmodel.cn](https://open.bigmodel.cn/) | [chat.z.ai](https://chat.z.ai/) |
+| **Zhipu / GLM** | GLM-5-Code | `2026-02-12` | `8.23` | `34.30` | `2.06`（读）存储限时免费 | [open.bigmodel.cn](https://open.bigmodel.cn/) | [chat.z.ai](https://chat.z.ai/) |
+| **Zhipu / GLM** | GLM-4.7 | `2025-12-22` | `4.12` | `15.09` | `0.75`（读）存储限时免费 | [open.bigmodel.cn](https://open.bigmodel.cn/) | [chat.z.ai](https://chat.z.ai/) |
+| **MiniMax** | MiniMax-M2.5 | `2026-02-12` | `2.06` | `8.23` | `0.21`（读）`2.57`（写） | [platform.minimax.io](https://platform.minimax.io/) | [chat.minimax.io](https://chat.minimax.io/) |
+| **MiniMax** | MiniMax-M2.5-highspeed | `2026-02-12` | `4.12` | `16.46` | `0.21`（读）`2.57`（写） | [platform.minimax.io](https://platform.minimax.io/) | [chat.minimax.io](https://chat.minimax.io/) |
+| **MiniMax** | MiniMax-M2.1 | `2025-12-23` | `2.06` | `8.23` | `0.21`（读）`2.57`（写） | [platform.minimax.io](https://platform.minimax.io/) | [chat.minimax.io](https://chat.minimax.io/) |
+| **StepFun** | Step-3.5-Flash | `2026-02-05` | `0.70`（未命中） | `2.10` | `0.14`（命中） | [platform.stepfun.com](https://platform.stepfun.com/) | [stepfun.com](https://stepfun.com/) |
+| **StepFun** | Step-3 | `2025-07-31` | `1.5-4`（未命中） | `4-10` | `0.3-0.8`（命中） | [platform.stepfun.com](https://platform.stepfun.com/) | [stepfun.com](https://stepfun.com/) |
+| **Qwen** | qwen3.5-plus | `2026-02-15` | `0.8-4`（内地） | `4.8-24` | 思考模式按对应输出价；无单列缓存价 | [bailian.console.aliyun.com](https://bailian.console.aliyun.com/) | [chat.qwen.ai](https://chat.qwen.ai/) |
+| **Qwen** | qwen3-max-2026-01-23 | `2026-01-23` | 以百炼模型页为准 | 以百炼模型页为准 | 以百炼模型页为准 | [bailian.console.aliyun.com](https://bailian.console.aliyun.com/) | [chat.qwen.ai](https://chat.qwen.ai/) |
+| **Qwen** | qwen3-coder-plus | `2025-09-23` | `4-20`（内地） | `16-200` | 隐式缓存 20%，显式缓存 10% | [bailian.console.aliyun.com](https://bailian.console.aliyun.com/) | [chat.qwen.ai](https://chat.qwen.ai/) |
+| **Qwen** | qwen3-coder-next | `2026-02-03` | 本地部署为主，未见公开 API 定价 | 本地部署为主，未见公开 API 定价 | `-` | [bailian.console.aliyun.com](https://bailian.console.aliyun.com/) | [chat.qwen.ai](https://chat.qwen.ai/) |
+| **文心（百度千帆）** | ERNIE 5.0 | `2026-01-22` | 公开新闻页未披露 | 公开新闻页未披露 | 以千帆控制台为准 | [console.bce.baidu.com/qianfan](https://console.bce.baidu.com/qianfan/overview) | [yiyan.baidu.com](https://yiyan.baidu.com/) |
+| **豆包 / 火山方舟** | Doubao-Seed-Code | `2025-12-03` | `1.22`（≤32K） | `8.06` | `0.24`（读） | [console.volcengine.com/ark](https://console.volcengine.com/ark) | [doubao.com](https://www.doubao.com/) |
+| **腾讯混元** | Tencent HY2.0 Think | `2025-12-05` | `5.30` | `21.20` | 以套餐页为准 | [console.cloud.tencent.com/hunyuan](https://console.cloud.tencent.com/hunyuan) | [yuanbao.tencent.com](https://yuanbao.tencent.com/) |
+| **腾讯混元** | Tencent HY2.0 Instruct | `2025-12-05` | `4.50` | `11.13` | 以套餐页为准 | [console.cloud.tencent.com/hunyuan](https://console.cloud.tencent.com/hunyuan) | [yuanbao.tencent.com](https://yuanbao.tencent.com/) |
+| **LongCat（美团）** | LongCat-Flash-Thinking-2601 | `2026-01-16` | 公开页未披露 | 公开页未披露 | 未公布 | [longcat.ai](https://longcat.ai/) | [longcat.ai](https://longcat.ai/) |
+| **LongCat（美团）** | LongCat-Flash-Chat | `2025-09-09` | 公开页未披露 | 公开页未披露 | 未公布 | [longcat.ai](https://longcat.ai/) | [longcat.ai](https://longcat.ai/) |
+| **MiMo（小米）** | MiMo-V2-Flash | `2025-12-14` | 开源权重为主，未见统一 API 定价 | 开源权重为主，未见统一 API 定价 | `-` | [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo) | [mimo.xiaomi.com](https://mimo.xiaomi.com/) |
 
 ### 更新日志
 
 | 日期 | 厂商 | 更新内容 | 官方链接 |
 |:---|:---|:---|:---|
+| `2026-03-05` | OpenAI | GPT-5.4 / GPT-5.4 Pro 发布并进入 API 与 Codex | [openai.com](https://openai.com/index/introducing-gpt-5-4) |
+| `2026-02-17` | Anthropic | Claude Sonnet 4.6 发布并接替 4.5 成为默认 Sonnet | [anthropic.com](https://www.anthropic.com/news/claude-sonnet-4-6) |
+| `2026-02-12` | Zhipu | GLM-5 / GLM-5-Code 发布 | [docs.z.ai](https://docs.z.ai/release-notes/new-released) |
+| `2026-02-12` | MiniMax | MiniMax-M2.5 发布 | [minimax.io](https://www.minimax.io/news/minimax-m25) |
 | `2026-02-05` | OpenAI | GPT-5.3-Codex 发布 | [openai.com](https://openai.com/index/introducing-gpt-5-3-codex) |
-| `2026-02-05` | Anthropic | Claude Opus 4.6 发布 | [anthropic.com](https://anthropic.com/news/claude-opus-4-6) |
-| `2026-02-03` | Qwen | Qwen3-Coder-Next 发布 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen3-coder/) / [GitHub](https://github.com/QwenLM/Qwen3-Coder) |
-| `2026-02-05` | StepFun | Step-3.5-Flash 发布 | [static.stepfun.com](https://static.stepfun.com/blog/step-3.5-flash) |
-| `2026-01-27` | Moonshot | Kimi K2.5 发布 | [kimi-k2.org](https://kimi-k2.org/en/blog/20-kimi-k2-5-en) |
-| `2026-01-16` | LongCat | LongCat-Flash-Thinking-2601 发布 | [GitHub](https://github.com/meituan-longcat/LongCat-Flash-Thinking-2601) |
-| `2026-01-15` | 百度 | ERNIE-5.0-0110 发布 | [ernie.baidu.com](https://ernie.baidu.com/blog/posts/ernie-5.0-0110-release-on-lmarena/) |
+| `2026-02-05` | Anthropic | Claude Opus 4.6 发布 | [anthropic.com](https://www.anthropic.com/claude/opus) |
+| `2026-02-03` | Qwen | qwen3-coder-next 发布 | [qwenlm.github.io](https://qwenlm.github.io/zh/blog/qwen3-coder/) |
+| `2026-01-27` | Moonshot | Kimi K2.5 发布 | [kimi.com](https://www.kimi.com/blog/kimi-k2-5) |
+| `2026-01-23` | 百度 | 文心 5.0 正式版上线千帆 | [cloud.baidu.com](https://cloud.baidu.com/news/news_eacd5e1a-b6ad-4874-b920-15390d26e656) |
 | `2025-12-23` | MiniMax | MiniMax-M2.1 发布 | [minimax.io](https://www.minimax.io/news/minimax-m21) |
-| `2025-12-22` | Zhipu | GLM-4.7 发布 | [z.ai](https://z.ai/blog/glm-4.7) |
 | `2025-12-17` | Google | Gemini 3 Flash 发布 | [blog.google](https://blog.google/products/gemini/gemini-3-flash/) |
-| `2025-12-14` | MiMo | MiMo-V2-Flash 发布 | [mimo.xiaomi.com](https://mimo.xiaomi.com/mimo-v2-flash) |
-| `2025-12-10` | OpenAI | GPT-5.2 Pro 发布 | [openai.com](https://openai.com/index/introducing-gpt-5-2/) |
-| `2025-12-05` | 腾讯 | HY 2.0 Think/Instruct 发布 | [hunyuan.tencent.com](https://hunyuan.tencent.com/) |
-| `2025-12-03` | 豆包 | Doubao-Seed-Code 发布 | [console.volcengine.com](https://console.volcengine.com/ark) |
 | `2025-12-01` | DeepSeek | DeepSeek-V3.2 发布 | [api-docs.deepseek.com](https://api-docs.deepseek.com/news/news251201) |
+| `2025-11-19` | xAI | Grok 4.1 Fast 与 Agent Tools API 发布 | [x.ai](https://x.ai/news/grok-4-1-fast/) |
 | `2025-11-18` | Google | Gemini 3 Pro 发布 | [blog.google](https://blog.google/products/gemini/gemini-3) |
-| `2025-11-17` | xAI | Grok 4.1 Fast 发布 | [x.ai](https://x.ai/news/grok-4-1) |
-| `2025-10-15` | Anthropic | Claude Haiku 4.5 发布 | [anthropic.com](https://www.anthropic.com/news/claude-haiku-4-5) |
-| `2025-10-01` | Anthropic | Claude Sonnet 4.5 发布 | [anthropic.com](https://www.anthropic.com/news/claude-sonnet-4-5) |
-| `2025-09-23` | Qwen | Qwen3 Max / Qwen3 Coder Plus 发布 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen3-coder/) |
-| `2025-09-09` | LongCat | LongCat-Flash-Chat 发布 | [GitHub](https://github.com/meituan-longcat/LongCat-Flash-Chat) |
-| `2025-07-31` | StepFun | Step3 发布 | [GitHub](https://github.com/stepfun-ai/Step3) |
-| `2025-07-23` | Qwen | Qwen3 Coder 480B 发布 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen3-coder/) |
-| `2025-07-09` | xAI | Grok 4 发布 | [x.ai](https://x.ai/news/grok-4) |
+| `2025-11-17` | xAI | Grok 4.1 发布 | [x.ai](https://x.ai/news/grok-4-1/) |
 
 ---
 
@@ -268,8 +269,8 @@
 
 | Tool | Repo / Site | 类型 | Stars | 免费额度/体验 | 备注 |
 |:---|:---|:---|:---:|:---|:---|
-| **Trae（国内版）** | [trae.com.cn](https://www.trae.com.cn/) / [trae.cn](https://www.trae.cn/) | AI 原生 IDE | - | 完全免费 | 字节跳动出品，集成 Doubao-1.5-pro、DeepSeek R1/V3（2025-03 发布） |
-| **Trae（国际版）** | [traeide.com](https://traeide.com/) / [trae.ai](https://www.trae.ai/) | AI 原生 IDE | - | 完全免费 | 字节跳动出品，支持 Claude 3.5-Sonnet、Claude 3.7-Sonnet、GPT-4o、DeepSeek R1/V3（截至 2026-02，尚未支持 Claude 4.6/GPT-5） |
+| **Trae（国内版）** | [trae.com.cn](https://www.trae.com.cn/) / [trae.cn](https://www.trae.cn/) | AI 原生 IDE | - | 完全免费 | 字节跳动出品，模型池持续轮换，国内版以 Doubao、DeepSeek 与自家编程模型为主，实际可用模型以产品内展示为准 |
+| **Trae（国际版）** | [traeide.com](https://traeide.com/) / [trae.ai](https://www.trae.ai/) | AI 原生 IDE | - | 完全免费 | 字节跳动出品，国际版模型池更新较快，通常覆盖 Claude、OpenAI、DeepSeek 等主流模型，具体支持列表以产品内实时展示为准 |
 | **通义灵码 IDE (Lingma IDE)** | [tongyi.aliyun.com/lingma](https://tongyi.aliyun.com/lingma/) | AI 原生 IDE | - | 个人基础版永久免费，专业版限免中 | 阿里云出品，支持 VS Code 插件 |
 | **Cherry Studio** | [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 桌面多模型客户端 | 39.4k | 开源免费，支持免费模型 | 多模型 AI 客户端 |
 | **CodeGeeX** | [THUDM/CodeGeeX](https://github.com/THUDM/CodeGeeX) | AI 代码助手 | 8.7k | 个人用户完全免费 | 智谱 AI 出品，支持 15+ 语言 |
@@ -280,12 +281,12 @@
 
 | 方案 | 官方入口 | 价格/计费 | 备注 |
 |:---|:---|:---|:---|
-| **Claude Code（Anthropic 官方）** | [Anthropic Pricing](https://www.anthropic.com/pricing#api) / [Claude Code costs](https://docs.anthropic.com/en/docs/claude-code/costs) | 按 API token 消耗计费：平均 `¥43/开发者/天` 或 `¥720-1440/开发者/月`（Sonnet 4.5）。订阅计划：Pro `¥144/月`（年付`¥1440`），Max 基础版 `¥720/月`，Max 高级版 `¥1440/月` | 模型代际已到 Claude 4.6，无固定月费 Coding Plan |
-| **OpenAI Codex（CLI/Cloud）** | [Codex Pricing](https://developers.openai.com/codex/pricing/) | Plus `¥144/月`（`$20/月`），Pro `¥1440/月`（`$200/月`），Business `¥216/用户/月`（`$30/用户/月`），或 API key token 计费 | 2026-02-07 核验，包含在 ChatGPT 订阅计划中 |
-| **GLM Coding Plan** | [z.ai/coding-plan](https://www.z.ai/coding-plan) | Lite `¥20/月`（120 prompts/5h），Pro `¥30/月`（600 prompts/5h），Max `¥60/月`（2400 prompts/5h） | 智谱 AI 出品，支持 GLM-4.6，兼容 Claude Code/Cline 等工具 |
-| **阿里云百炼 Coding Plan** | [阿里云 Coding Plan](https://www.aliyun.com/benefit/scene/codingplan) | Lite `¥10/月`（首月）`¥40/月`（续费，18k 次/月），Pro `¥50/月`（首月）`¥200/月`（续费，90k 次/月） | 支持 Qwen3-Coder-Plus，兼容 Claude Code/Qwen Code/Cline 等工具 |
+| **Claude Code（Anthropic 官方）** | [Anthropic Pricing](https://www.anthropic.com/pricing#api) / [Claude Code costs](https://docs.anthropic.com/en/docs/claude-code/costs) | 按 API token 消耗计费：平均 `¥43/开发者/天` 或 `¥720-1440/开发者/月`（以 Sonnet 4.6 工作负载为主）。订阅计划：Pro `¥144/月`（年付`¥1440`），Max 基础版 `¥720/月`，Max 高级版 `¥1440/月` | 当前主力模型已更新到 Claude 4.6 系列，无单独固定月费 Coding Plan |
+| **OpenAI Codex（CLI/Cloud）** | [Codex Pricing](https://developers.openai.com/codex/pricing/) | Plus `¥144/月`（`$20/月`），Pro `¥1440/月`（`$200/月`），Business `¥216/用户/月`（`$30/用户/月`），或 API key token 计费 | 2026-03-25 核验，当前主力模型已推进到 GPT-5.4 / GPT-5.3-Codex 组合 |
+| **GLM Coding Plan** | [z.ai/coding-plan](https://www.z.ai/coding-plan) | Lite `¥20/月`（120 prompts/5h），Pro `¥30/月`（600 prompts/5h），Max `¥60/月`（2400 prompts/5h） | 智谱 AI 出品，当前主推 GLM-5 / GLM-5-Code，兼容 Claude Code/Cline 等工具 |
+| **阿里云百炼 Coding Plan** | [阿里云 Coding Plan](https://www.aliyun.com/benefit/scene/codingplan) | Lite `¥10/月`（首月）`¥40/月`（续费，18k 次/月），Pro `¥50/月`（首月）`¥200/月`（续费，90k 次/月） | 当前主推 qwen3.5-plus 与 qwen3-coder-plus，兼容 Claude Code/Qwen Code/Cline 等工具 |
 | **MiniMax Claude Code 方案** | [MiniMax 文档](https://www.minimax.io/platform/document/claude-code) | Starter `¥10/月`（100 prompts/5h），Plus `¥20/月`（300 prompts/5h），Max `¥50/月`（1000 prompts/5h） | 覆盖 Claude Code 兼容接入说明，年付有折扣 |
-| **火山引擎 ModelArk Coding 方案** | [modelark 产品页](https://www.volcengine.com/product/modelark) / [方舟 Coding Plan](https://www.volcengine.com/activity/codingplan) | Lite `¥9.9/月`（首购，首月可低至`¥8.9`，1200 次/5h），Pro `¥49.9/月`（首购，6000 次/5h） | 支持 Doubao-Seed-Code、GLM-4.7、DeepSeek-V3.2、Kimi-K2-Thinking，兼容 Claude Code/Cursor/Cline 等工具 |
+| **火山引擎 ModelArk Coding 方案** | [modelark 产品页](https://www.volcengine.com/product/modelark) / [方舟 Coding Plan](https://www.volcengine.com/activity/codingplan) | Lite `¥9.9/月`（首购，首月可低至`¥8.9`，1200 次/5h），Pro `¥49.9/月`（首购，6000 次/5h） | 支持 Doubao-Seed-Code、GLM-5、DeepSeek-V3.2、Kimi-K2.5 等模型接入，兼容 Claude Code/Cursor/Cline 等工具 |
 
 ---
 
