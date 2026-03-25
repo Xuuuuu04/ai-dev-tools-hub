@@ -28,8 +28,8 @@
 </td>
 <td align="center" width="180">
 <a href="https://aistudio.google.com/">
-<img src="https://img.shields.io/badge/Google-Gemini%203%20Flash-4285F4?style=flat-square&logo=google&logoColor=white" alt="Google" /><br/>
-<sub><code>2025-12-17</code></sub>
+<img src="https://img.shields.io/badge/Google-Gemini%202.5%20Pro-4285F4?style=flat-square&logo=google&logoColor=white" alt="Google" /><br/>
+<sub><code>2025-03-25</code></sub>
 </a>
 </td>
 <td align="center" width="180">
@@ -130,6 +130,7 @@
 
 > **价格单位**：人民币（¥）/ 百万 tokens | **汇率参考**：$1 ≈ ¥6.86（2026-03-25）  
 > **校对口径**：仅采用厂商官方新闻稿、官方模型文档、官方定价页与官方控制台信息。若官方未公开某项价格，则明确标注“未公布”或“以控制台为准”。
+> **重要说明**：截至 `2026-03-25`，Google 官方开发者文档可核验到的稳定旗舰是 `Gemini 2.5 Pro`，下一代预览模型是 `Gemini 3 Pro Preview`；我未检索到 Google 官方公开命名为 `Gemini 3.1 Pro` 的开发者模型页。MiniMax 官方新闻页与开发者文档当前可核验到的是 `MiniMax-M2.5` / `MiniMax-M2.5-highspeed`，未检索到官方公开命名为 `MiniMax-M2.7` 的页面。
 
 | 厂商 | 当前主力模型 | 发布时间 | 输入（¥/百万tokens） | 输出（¥/百万tokens） | 缓存（¥/百万tokens） | 开发者 Console | 体验入口 |
 |:---|:---|:---|:---:|:---:|:---:|:---|:---|
@@ -139,9 +140,11 @@
 | **Anthropic** | Claude Sonnet 4.6 | `2026-02-17` | `20.58` | `102.90` | 支持 Prompt Caching，4.6 公页未单列读写价 | [console.anthropic.com](https://console.anthropic.com/) | [claude.ai](https://claude.ai/) |
 | **Anthropic** | Claude Opus 4.6 | `2026-02-05` | `34.30` | `171.50` | 支持 Prompt Caching，4.6 公页未单列读写价 | [console.anthropic.com](https://console.anthropic.com/) | [claude.ai](https://claude.ai/) |
 | **Anthropic** | Claude Haiku 4.5 | `2025-10-15` | `6.86` | `34.30` | 支持 Prompt Caching，最高可节省约 90% | [console.anthropic.com](https://console.anthropic.com/) | [claude.ai](https://claude.ai/) |
-| **Google** | Gemini 3 Pro（≤200K） | `2025-11-18` | `13.72` | `82.32` | `1.37`，存储 `6.86`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
-| **Google** | Gemini 3 Pro（>200K） | `2025-11-18` | `27.44` | `123.48` | `2.74`，存储 `6.86`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
-| **Google** | Gemini 3 Flash | `2025-12-17` | `3.43` | `20.58` | `0.34`，存储 `6.86`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
+| **Google** | Gemini 2.5 Pro（GA，稳定旗舰，≤200K） | `2025-03-25` | `8.58` | `68.60` | `0.86`，存储 `30.87`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
+| **Google** | Gemini 2.5 Pro（GA，稳定旗舰，>200K） | `2025-03-25` | `17.15` | `102.90` | `1.72`，存储 `30.87`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
+| **Google** | Gemini 3 Pro Preview（下一代预览，≤200K） | `2025-11-18` | `13.72` | `82.32` | `1.37`，存储 `30.87`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
+| **Google** | Gemini 3 Pro Preview（下一代预览，>200K） | `2025-11-18` | `27.44` | `123.48` | `2.74`，存储 `30.87`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
+| **Google** | Gemini 3 Flash Preview | `2025-12-17` | `3.43` | `20.58` | `0.34`，存储 `6.86`/小时 | [aistudio.google.com](https://aistudio.google.com/) | [gemini.google.com](https://gemini.google.com/) |
 | **xAI** | Grok 4.1 Fast | `2025-11-19` | `1.37` | `3.43` | `0.34` | [console.x.ai](https://console.x.ai/) | [grok.com](https://grok.com/) |
 | **xAI** | Grok 4.1 | `2025-11-17` | 以官方模型页为准 | 以官方模型页为准 | 以官方模型页为准 | [console.x.ai](https://console.x.ai/) | [grok.com](https://grok.com/) |
 | **xAI** | Grok 4 | `2025-07-09` | 以官方模型页为准 | 以官方模型页为准 | 以官方模型页为准 | [console.x.ai](https://console.x.ai/) | [grok.com](https://grok.com/) |
@@ -169,25 +172,96 @@
 | **LongCat（美团）** | LongCat-Flash-Chat | `2025-09-09` | 公开页未披露 | 公开页未披露 | 未公布 | [longcat.ai](https://longcat.ai/) | [longcat.ai](https://longcat.ai/) |
 | **MiMo（小米）** | MiMo-V2-Flash | `2025-12-14` | 开源权重为主，未见统一 API 定价 | 开源权重为主，未见统一 API 定价 | `-` | [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo) | [mimo.xiaomi.com](https://mimo.xiaomi.com/) |
 
-### 更新日志
+### 公开版本时间线（2023-12 至 2026-03）
 
-| 日期 | 厂商 | 更新内容 | 官方链接 |
+> **记录口径**：下面优先记录“官方公开命名且可从新闻稿、发布博文、API 文档或 Release Notes 核验”的模型版本。对没有统一 Release Notes 的厂商，我在后面的“分散发布厂商补充清单”里补了公开可核验型号。
+
+| 月份 | 厂商 | 官方公开版本 / 型号 | 说明 | 官方链接 |
+|:---|:---|:---|:---|:---|
+| `2023-12` | Google | Gemini 1.0 Ultra / Pro / Nano | Gemini 1.0 首发 | [blog.google](https://blog.google/innovation-and-ai/technology/ai/google-gemini-ai/) |
+| `2024-02` | Google | Gemini 1.5 Pro | Gemini 1.5 首发版本 | [blog.google](https://blog.google/innovation-and-ai/products/google-gemini-next-generation-model-february-2024/) |
+| `2024-02` | Qwen | Qwen1.5 | Qwen1.5 基础系列 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen1.5/) |
+| `2024-03` | Anthropic | Claude 3 Opus / Sonnet / Haiku | Claude 3 家族发布 | [anthropic.com](https://www.anthropic.com/news/claude-3-family) |
+| `2024-03` | xAI | Grok-1.5 | Grok-1.5 发布 | [x.ai](https://x.ai/news/grok-1.5) |
+| `2024-04` | Qwen | CodeQwen1.5 | Qwen 首个代码专门版本 | [qwenlm.github.io](https://qwenlm.github.io/blog/codeqwen1.5/) |
+| `2024-05` | OpenAI | GPT-4o | 新一代原生多模态旗舰 | [openai.com](https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/) |
+| `2024-05` | Google | Gemini 1.5 Pro（1M 上下文） | 面向开发者和 Gemini Advanced 扩展 | [blog.google](https://blog.google/products/gemini/google-gemini-update-may-2024/) |
+| `2024-05` | DeepSeek | DeepSeek-V2 | DeepSeek V2 代公开上线 | [api-docs.deepseek.com](https://api-docs.deepseek.com/updates/) |
+| `2024-06` | Qwen | Qwen2 | Qwen2 系列发布 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen2/) |
+| `2024-06` | Anthropic | Claude 3.5 Sonnet | Claude 3.5 系列首发 | [anthropic.com](https://www.anthropic.com/news/claude-3-5-sonnet) |
+| `2024-07` | OpenAI | GPT-4o mini | 轻量多模态模型发布 | [help.openai.com](https://help.openai.com/en/articles/9624314-model-release-notes) |
+| `2024-07` | DeepSeek | DeepSeek-Coder-V2 | 代码模型 V2 代 | [api-docs.deepseek.com](https://api-docs.deepseek.com/updates/) |
+| `2024-08` | xAI | Grok-2 / Grok-2 mini | Grok-2 代在 8 月上线，12 月再做官方大版本升级 | [x.ai](https://x.ai/news/grok-1212/) |
+| `2024-09` | OpenAI | o1-preview / o1-mini | 推理模型 o1 系列首发 | [openai.com](https://openai.com/index/introducing-openai-o1-preview/) |
+| `2024-09` | DeepSeek | DeepSeek-V2.5 | 通用与代码能力融合版 | [api-docs.deepseek.com](https://api-docs.deepseek.com/news/news0905/) |
+| `2024-09` | Qwen | Qwen2.5 | Qwen2.5 基础系列 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen2.5/) |
+| `2024-09` | Qwen | Qwen2.5-Coder | Qwen2.5 代码模型 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen2.5-coder/) |
+| `2024-10` | Anthropic | Claude 3.5 Haiku | 3.5 Haiku 发布 | [anthropic.com](https://www.anthropic.com/news/claude-3-5-haiku) |
+| `2024-11` | xAI | grok-beta / grok-vision-beta | xAI API 公测首批模型 | [x.ai](https://x.ai/news/api/) |
+| `2024-12` | xAI | grok-2-1212 / grok-2-vision-1212 | Grok-2 更新版进入 API | [x.ai](https://x.ai/news/grok-1212/) |
+| `2024-12` | Google | Gemini 2.0 Flash | Gemini 2 代起点 | [blog.google](https://blog.google/products/gemini/gemini-2-0-flash/) |
+| `2024-12` | DeepSeek | DeepSeek-V3 | DeepSeek V3 正式发布 | [api-docs.deepseek.com](https://api-docs.deepseek.com/news/news1226) |
+| `2025-01` | DeepSeek | DeepSeek-R1 | R1 推理模型正式发布 | [api-docs.deepseek.com](https://api-docs.deepseek.com/news/news250120) |
+| `2025-01` | Qwen | Qwen2.5-Max | 大规模 MoE 商业旗舰 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen2.5-max/) |
+| `2025-02` | OpenAI | GPT-4.5 | GPT-4.5 发布 | [openai.com](https://openai.com/index/introducing-gpt-4-5/) |
+| `2025-02` | Anthropic | Claude 3.7 Sonnet | 3.7 Sonnet 发布 | [anthropic.com](https://www.anthropic.com/news/claude-3-7-sonnet) |
+| `2025-02` | xAI | Grok 3 / Grok 3 mini | Grok 3 Beta 发布 | [x.ai](https://x.ai/blog/grok-3) |
+| `2025-03` | Google | Gemini 2.5 Pro | 2.5 Pro 首发；截至 2026-03 仍是官方稳定旗舰 | [blog.google](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/) |
+| `2025-03` | DeepSeek | DeepSeek-V3-0324 | V3 小版本升级 | [api-docs.deepseek.com](https://api-docs.deepseek.com/zh-cn/news/news250325) |
+| `2025-03` | Qwen | QwQ-32B | RL 推理模型 QwQ-32B 发布 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwq-32b/) |
+| `2025-03` | Qwen | Qwen2.5-Omni | 多模态全模态模型 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen2.5-omni/) |
+| `2025-04` | OpenAI | GPT-4.1 / 4.1 mini / 4.1 nano | 4.1 系列 API 发布 | [openai.com](https://openai.com/index/introducing-gpt-4-1/) |
+| `2025-04` | OpenAI | o3 / o4-mini | 新一代推理模型 | [openai.com](https://openai.com/index/introducing-o3-and-o4-mini/) |
+| `2025-04` | Qwen | Qwen3 | Qwen3 基础系列 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen3/) |
+| `2025-04` | 百度 | 文心 4.5 Turbo / X1 Turbo | 百度 Create 2025 发布 Turbo 双模型 | [cloud.baidu.com](https://cloud.baidu.com/news/news_01bea4b7-a6b4-432d-a8cb-647c288c7fda) |
+| `2025-05` | Google | Gemini 2.5 Pro Preview（I/O Edition） | 2.5 Pro 编码增强版预览 | [blog.google](https://blog.google/products/gemini/gemini-2-5-pro-updates) |
+| `2025-05` | DeepSeek | DeepSeek-R1-0528 | R1 小版本升级 | [api-docs.deepseek.com](https://api-docs.deepseek.com/zh-cn/news/news250528) |
+| `2025-05` | Anthropic | Claude Opus 4 / Sonnet 4 | Claude 4 家族发布 | [anthropic.com](https://www.anthropic.com/news/claude-4) |
+| `2025-06` | OpenAI | o3-pro | o3-pro 进入 API / ChatGPT Pro | [help.openai.com](https://help.openai.com/en/articles/9624314-model-release-notes) |
+| `2025-07` | xAI | Grok 4 | Grok 4 发布 | [x.ai](https://x.ai/news/grok-4) |
+| `2025-07` | Qwen | Qwen3-Coder-480B-A35B-Instruct | Qwen3-Coder 首发旗舰 | [qwenlm.github.io](https://qwenlm.github.io/blog/qwen3-coder/) |
+| `2025-07` | StepFun | Step-3 | Step-3 发布 | [github.com](https://github.com/stepfun-ai/Step3) |
+| `2025-08` | xAI | Grok Code Fast 1 | 专用代码模型 | [x.ai](https://x.ai/blog) |
+| `2025-08` | DeepSeek | DeepSeek-V3.1 | 混合 Think / Non-Think 架构 | [api-docs.deepseek.com](https://api-docs.deepseek.com/news/news250821) |
+| `2025-09` | xAI | Grok 4 Fast | 成本优化版 Grok 4 | [x.ai](https://x.ai/blog) |
+| `2025-09` | DeepSeek | DeepSeek-V3.1-Terminus / V3.2-Exp | 3.1 终版与 3.2 实验版 | [api-docs.deepseek.com](https://api-docs.deepseek.com/updates/) |
+| `2025-10` | Anthropic | Claude Sonnet 4.5 / Haiku 4.5 | Claude 4.5 系列更新 | [anthropic.com](https://www.anthropic.com/news) |
+| `2025-11` | xAI | Grok 4.1 | Grok 4.1 上线消费者端 | [x.ai](https://x.ai/news/grok-4-1/) |
+| `2025-11` | xAI | Grok 4.1 Fast | Agent tools + 2M context | [x.ai](https://x.ai/news/grok-4-1-fast/) |
+| `2025-11` | Google | Gemini 3 Pro Preview / Gemini 3 Deep Think | Gemini 3 时代开启 | [blog.google](https://blog.google/products/gemini/gemini-3) |
+| `2025-12` | Google | Gemini 3 Flash Preview | Gemini 3 Flash 发布 | [blog.google](https://blog.google/products/gemini/gemini-3-flash/) |
+| `2025-12` | DeepSeek | DeepSeek-V3.2 | V3.2 正式版 | [api-docs.deepseek.com](https://api-docs.deepseek.com/updates/) |
+| `2025-12` | Zhipu | GLM-4.7 | GLM-4.7 发布 | [docs.z.ai](https://docs.z.ai/release-notes/new-released) |
+| `2025-12` | MiniMax | MiniMax-M2.1 | M2.1 发布 | [minimax.io](https://www.minimax.io/news/minimax-m21) |
+| `2025-12` | 火山方舟 / 豆包 | Doubao-Seed-Code | 代码模型公开上线 | [console.volcengine.com](https://console.volcengine.com/ark) |
+| `2025-12` | 腾讯混元 | HY2.0 Think / HY2.0 Instruct | 腾讯混元 2.0 系列 | [cloud.tencent.com](https://cloud.tencent.com/document/product/1729) |
+| `2026-01` | 百度 | ERNIE 5.0 | 文心 5.0 正式版上线千帆 | [cloud.baidu.com](https://cloud.baidu.com/news/news_eacd5e1a-b6ad-4874-b920-15390d26e656) |
+| `2026-01` | Moonshot | Kimi K2.5 | K2.5 发布 | [kimi.com](https://www.kimi.com/blog/kimi-k2-5) |
+| `2026-01` | Qwen | qwen3-max-2026-01-23 | 商业 Max 版更新 | [help.aliyun.com](https://help.aliyun.com/) |
+| `2026-01` | LongCat | LongCat-Flash-Thinking-2601 | Thinking 版上线 | [github.com](https://github.com/meituan-longcat) |
+| `2026-02` | OpenAI | GPT-5.3-Codex | Codex 专用代际 | [openai.com](https://openai.com/index/introducing-gpt-5-3-codex) |
+| `2026-02` | Anthropic | Claude Opus 4.6 / Sonnet 4.6 | 4.6 系列更新 | [anthropic.com](https://www.anthropic.com/news) |
+| `2026-02` | Qwen | qwen3-coder-next / qwen3.5-plus | Qwen 商业线继续迭代 | [qwenlm.github.io](https://qwenlm.github.io/zh/blog/qwen3-coder/) |
+| `2026-02` | Zhipu | GLM-5 / GLM-5-Code | GLM-5 代发布 | [docs.z.ai](https://docs.z.ai/release-notes/new-released) |
+| `2026-02` | MiniMax | MiniMax-M2.5 / M2.5-highspeed | M2.5 系列发布 | [minimax.io](https://www.minimax.io/news/minimax-m25) |
+| `2026-02` | StepFun | Step-3.5-Flash | Step-3.5-Flash 发布 | [stepfun.com](https://platform.stepfun.com/) |
+| `2026-03` | OpenAI | GPT-5.4 / GPT-5.4 Pro | GPT-5.4 正式进入 API 与 Codex | [openai.com](https://openai.com/index/introducing-gpt-5-4) |
+
+### 分散发布厂商补充清单（截至 2026-03-25）
+
+> 这些厂商没有像 OpenAI / Google / DeepSeek 那样集中维护一页完整的公开版本年表，我把当前能从官方产品页、文档页或官方仓库核验到的公开命名版本集中补在这里。
+
+| 厂商 | 官方公开型号 / 版本 | 可核验信息 | 官方入口 |
 |:---|:---|:---|:---|
-| `2026-03-05` | OpenAI | GPT-5.4 / GPT-5.4 Pro 发布并进入 API 与 Codex | [openai.com](https://openai.com/index/introducing-gpt-5-4) |
-| `2026-02-17` | Anthropic | Claude Sonnet 4.6 发布并接替 4.5 成为默认 Sonnet | [anthropic.com](https://www.anthropic.com/news/claude-sonnet-4-6) |
-| `2026-02-12` | Zhipu | GLM-5 / GLM-5-Code 发布 | [docs.z.ai](https://docs.z.ai/release-notes/new-released) |
-| `2026-02-12` | MiniMax | MiniMax-M2.5 发布 | [minimax.io](https://www.minimax.io/news/minimax-m25) |
-| `2026-02-05` | OpenAI | GPT-5.3-Codex 发布 | [openai.com](https://openai.com/index/introducing-gpt-5-3-codex) |
-| `2026-02-05` | Anthropic | Claude Opus 4.6 发布 | [anthropic.com](https://www.anthropic.com/claude/opus) |
-| `2026-02-03` | Qwen | qwen3-coder-next 发布 | [qwenlm.github.io](https://qwenlm.github.io/zh/blog/qwen3-coder/) |
-| `2026-01-27` | Moonshot | Kimi K2.5 发布 | [kimi.com](https://www.kimi.com/blog/kimi-k2-5) |
-| `2026-01-23` | 百度 | 文心 5.0 正式版上线千帆 | [cloud.baidu.com](https://cloud.baidu.com/news/news_eacd5e1a-b6ad-4874-b920-15390d26e656) |
-| `2025-12-23` | MiniMax | MiniMax-M2.1 发布 | [minimax.io](https://www.minimax.io/news/minimax-m21) |
-| `2025-12-17` | Google | Gemini 3 Flash 发布 | [blog.google](https://blog.google/products/gemini/gemini-3-flash/) |
-| `2025-12-01` | DeepSeek | DeepSeek-V3.2 发布 | [api-docs.deepseek.com](https://api-docs.deepseek.com/news/news251201) |
-| `2025-11-19` | xAI | Grok 4.1 Fast 与 Agent Tools API 发布 | [x.ai](https://x.ai/news/grok-4-1-fast/) |
-| `2025-11-18` | Google | Gemini 3 Pro 发布 | [blog.google](https://blog.google/products/gemini/gemini-3) |
-| `2025-11-17` | xAI | Grok 4.1 发布 | [x.ai](https://x.ai/news/grok-4-1/) |
+| **Moonshot (Kimi)** | `moonshot-v1-8k` / `moonshot-v1-32k` / `moonshot-v1-128k` / `kimi-latest` / `kimi-thinking-preview` / `Kimi K2.5` | 公开博客与平台文档可核验到的主要 API / 产品代际 | [platform.moonshot.cn](https://platform.moonshot.cn/) |
+| **Zhipu / GLM** | `GLM-4-Flash` / `GLM-4-Long` / `GLM-4-Plus` / `GLM-4.5` / `GLM-4.5-Air` / `GLM-4.5-AirX` / `GLM-4.6` / `GLM-4.6V` / `GLM-4.7` / `GLM-4.7-Flash` / `GLM-5` / `GLM-5-Code` | 智谱开放平台当前公开命名文本主模型 | [docs.z.ai](https://docs.z.ai/guides/overview/pricing) |
+| **MiniMax** | `MiniMax-M1` / `MiniMax-M2` / `MiniMax-M2.1` / `MiniMax-M2.5` / `MiniMax-M2.5-highspeed` | 官方新闻和平台文档可核验的主文本模型代际 | [platform.minimax.io](https://platform.minimax.io/) |
+| **StepFun** | `Step-1` / `Step-1V` / `Step-1.5V` / `Step-2` / `Step-2-16K` / `Step-2-mini` / `Step-3` / `Step-3.5-Flash` | 官方平台与公开仓库可核验的主要大模型版本 | [platform.stepfun.com](https://platform.stepfun.com/) |
+| **百度文心** | `ERNIE 4.0 Turbo` / `ERNIE 4.5` / `ERNIE X1` / `ERNIE 4.5 Turbo` / `ERNIE X1 Turbo` / `ERNIE 5.0` | 公开新闻稿与千帆平台对外可见版本 | [console.bce.baidu.com](https://console.bce.baidu.com/qianfan/overview) |
+| **豆包 / 火山方舟** | `Doubao-pro-32k` / `Doubao-pro-128k` / `Doubao-lite-32k` / `Doubao-1.5-pro` / `Doubao-1.5-thinking-pro` / `Doubao-Seed-1.6` / `Doubao-Seed-Code` | 方舟平台公开命名的代表型号 | [console.volcengine.com](https://console.volcengine.com/ark) |
+| **腾讯混元** | `hunyuan-standard` / `hunyuan-pro` / `hunyuan-lite` / `hunyuan-turbos` / `HY2.0-Think` / `HY2.0-Instruct` | 腾讯云文档与控制台公开可见型号 | [cloud.tencent.com](https://cloud.tencent.com/document/product/1729) |
+| **LongCat（美团）** | `LongCat-Flash-Chat` / `LongCat-Flash-Thinking-2601` | 当前公开仓库可核验的主模型版本 | [github.com](https://github.com/meituan-longcat) |
+| **MiMo（小米）** | `MiMo-7B-Base` / `MiMo-7B-SFT` / `MiMo-7B-RL` / `MiMo-V2-Flash` | 以公开权重与官网可见命名版本为准 | [huggingface.co](https://huggingface.co/XiaomiMiMo) |
 
 ---
 
